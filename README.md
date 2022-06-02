@@ -8,8 +8,8 @@
   <h2 align="center">Ruby4Noobs</h2>
 
   <a href="https://www.ruby-lang.org/pt/" target="_blank">
-    <h1 align="center"><img src="./assets/ruby.svg" alt="Imagem da linguagem" width="120"><h1>
-  </a>
+    <h1 align="center"><img src="./assets/ruby.svg" href="https://www.ruby-lang.org/pt" alt="Imagem da linguagem" width="120"></h1>
+
   <p align="center">
     <a href="https://github.com/Rinyaresu/ruby4noobs/issues/new">Report Bug</a>
     ·
