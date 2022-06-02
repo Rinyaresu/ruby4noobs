@@ -1,13 +1,8 @@
-  
-<!-- Logo 4noobs -->
-
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
     <img src="./assets/header_4noobs.svg">
   </a>
 </p>
-
-<!-- Title -->
 
 <p align="center">
   <h2 align="center">Ruby4Noobs</h2>
@@ -33,8 +28,8 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](ht
 
 ### Ambiente
 
-1. [Editor de texto](src/2.-Ambiente/1-editor-de-texto.md)
-2. [Configuração de ambiente](src/2.-Ambiente/2-configuracao-de-ambiente.md)
+1. [Editor de texto](src/2-Ambiente/1-editor-de-texto.md)
+2. [Configuração de ambiente](src/2-Ambiente/2-configuracao-de-ambiente.md)
 
 ### Básico da linguagem
 
