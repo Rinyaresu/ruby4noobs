@@ -6,4 +6,4 @@ A minha recomendação é o site [Replit](https://replit.com/languages/ruby), qu
 
 [<img alt="alt_text" width="900px" src="https://marquesfernandes.com/wp-content/uploads/2019/09/download.png" />](https://replit.com/languages/ruby)
 
-[Próximo](../3-Basico%20da%20Linguagem/hello-world.md)
+[Próximo](../3-Basico%20da%20Linguagem/1-hello-world.md)
