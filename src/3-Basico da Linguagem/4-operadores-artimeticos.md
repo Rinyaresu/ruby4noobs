@@ -34,7 +34,7 @@ Os operadores aritméticos padrões são:
 
 ## Operadores Aritméticos com Variáveis
 
-Você também pode usar esses operadores com as variáveis ensinadas anteriormente.
+No capítulo sobre as [Variáveis](3-variaveis.md) mostramos como declarar variáveis e você também pode usar esses operadores com as variáveis ensinadas anteriormente. Como por exemplo:
 
 ```ruby
 x = 10
