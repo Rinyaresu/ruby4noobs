@@ -10,9 +10,9 @@
   <h1 align="center"><img src="./assets/ruby.svg" alt="Imagem da linguagem" width="120"><h1>
   
   <p align="center">
-    <a href="https://github.com/pgjbz/rust4noobs/issues/new">Report Bug</a>
+    <a href="https://github.com/Rinyaresu/ruby4noobs/issues/new">Report Bug</a>
     ·
-    <a href="https://github.com/pgjbz/rust4noobs/issues/new">Request Feature</a>
+    <a href="https://github.com/Rinyaresu/ruby4noobs/issues/new">Request Feature</a>
   </p>
 </p>
 
