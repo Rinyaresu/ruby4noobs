@@ -2,12 +2,14 @@
 
 Os operadores aritméticos padrões são:
 
-- os de soma (+),
-- subtração (-),
-- multiplicação (*),
-- divisão (/),
-- módulo (%),
-- potência (**).
+| Tipo                 | Simbolo | Ação                                 |
+| ---                  | ---     | ---                                  |
+| Soma                 | +       | Soma dois valores                    |
+| Subtração            | -       | Subtrai dois valores                 |
+| Multiplicação        | *       | Multiplica dois valores              |
+| Divisão              | /       | Divide dois valores                  |
+| Módulo               | %       | Resto de divisão                     |
+| Potência             | **      | Calcula a potência entre dois números|
 
 ```ruby
 10 + 5 

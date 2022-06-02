@@ -2,12 +2,14 @@
 
 Os operadores relacionais padrões são:
 
-- os de igualdade (==),
-- os de diferença (!=),
-- os de maior que (>),
-- os de menor que (<),
-- os de maior ou igual (>=),
-- os de menor ou igual (<=).
+| Tipo                 | Simbolo  | Exemplo | Ação                                                                      |
+| ---                  | ---      |  ---    | ---                                                                       |
+| Igualdade            | ==       | y == x  | Resulta `true` ou `false` se tiver igualdade                              |
+| Diferença            | !=       | y != x  | Resulta `true` ou `false` se tiver diferença                              |
+| Maior                | >        | y > x   | Resulta `true` se for maior                                               |
+| Menor                | <        | y < x   | Resulta `true` se for menor                                               |
+| Maior ou igual       | >=       | y >= x  | Resulta `true` se a for maior ou igual a b, resulta `false` caso contrário|
+| Menor ou igual       | <=       | y <= x  | Resulta `true` se a for menor ou igual a b, resulta `false` caso contrário|
 
 ```ruby
 10 == 5 # false
