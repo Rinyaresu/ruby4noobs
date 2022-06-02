@@ -40,3 +40,4 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](ht
 
 1. [Hello World](src/3-Basico%20da%20Linguagem/1-hello-world.md)
 2. [Tipos de dados](src/3-Basico%20da%20Linguagem/2-tipos-de-dados.md)
+3. [Variáveis](src/3-Basico%20da%20Linguagem/3-variaveis.md)
