@@ -53,4 +53,4 @@ puts # Esse trecho significa que vamos imprimir algo na tela
 
 E agora? Está começando a entender a linguagem? 🤔
 
-[Próximo]()
+[Próximo](2-tipos-de-dados.md)

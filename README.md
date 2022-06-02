@@ -34,7 +34,8 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](ht
 
 1. [Editor de texto](src/2-Ambiente/1-editor-de-texto.md)
 2. [Configuração de ambiente](src/2-Ambiente/2-configuracao-de-ambiente.md)
+3. [Ambiente Online](src/2-Ambiente/3-ambiente-online.md)
 
 ### Básico da linguagem
 
-1. [Hello World](src/3-Basico%20da%20Linguagem/hello-world.md)
+1. [Hello World](src/3-Basico%20da%20Linguagem/1-hello-world.md)
