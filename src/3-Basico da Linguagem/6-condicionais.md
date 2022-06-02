@@ -9,6 +9,8 @@
 `else` é uma estrutura de controle que executa uma determinada ação caso uma condição seja falsa.
 
 ```ruby
+r = "Ruby"
+
 if r == "Ruby"
   puts "É Ruby"
 else
@@ -23,6 +25,8 @@ end
 `elsif` é um `else` `if`
 
 ```ruby
+r = "PHP"
+
 if r == "Ruby"
   puts "É Ruby"
 elsif r == "PHP"
@@ -30,6 +34,8 @@ elsif r == "PHP"
 else
   puts "Não é Ruby nem PHP"
 end
+
+# Executando: É PHP
 ```
 
 ## unless
@@ -37,11 +43,17 @@ end
 `unless` é o contrário do `if` e ele é utilizado para negar uma condição e executar o bloco caso a condição seja falsa.
 
 ```ruby
+r = "PHP"
+
 unless r == "Ruby"
   puts "Não é Ruby"
 else
   puts "É Ruby"
 end
+
+# Executando: Não é Ruby
+
+# Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste positivo (if)
 ```
 
 ## case
@@ -49,6 +61,8 @@ end
 `case` é utilizado para executar um bloco de código de acordo com uma condição. É possível utilizar mais de uma condição. Podemos utilizar o case para fazer algumas comparações interessantes
 
 ```ruby
+r = "JavaScript" 
+
 case r
 when "Ruby"
   puts "É Ruby"
@@ -57,6 +71,8 @@ when "PHP"
 else
   puts "Não é Ruby nem PHP"
 end
+
+# Executando: Não é Ruby nem PHP
 ```
 
 ## for
@@ -67,6 +83,8 @@ end
 for i in 1..10
   puts i
 end
+
+# Executando: 1 2 3 4 5 6 7 8 9 10
 ```
 
 ## while
@@ -74,9 +92,15 @@ end
 `while` é utilizado para executar um bloco de código enquanto uma condição for verdadeira. (Faça enquanto)
 
 ```ruby
+r = "JavaScript"
+
 while r != "Ruby"
   puts "Não é Ruby"
 end
+
+# Executando Não é Ruby
+
+# Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
 ```
 
 ## until
@@ -84,9 +108,14 @@ end
 `until` é utilizado para executar um bloco de código enquanto uma condição for falsa. (Faça até que)
 
 ```ruby
-until r == "Ruby"
-  puts "Não é Ruby"
+i = 0
+
+until i == 7
+  puts i
+  i += 1
 end
+
+# 0 1 2 3 4 5 6
 ```
 
 ## loop
@@ -104,8 +133,7 @@ Vamos utilizar essas interações:
 ```ruby
 for i in (0..77)
   break if i == 4
-    puts i
-  end
+  puts i
 end
 
 # Executando: 0 1 2 3
@@ -116,11 +144,10 @@ end
 ```ruby
 for i in (0..77)
   next if i == 4
-    puts i
-  end
+  puts i
 end
 
-# Executando: 0 1 2 3 5...
+# Executando: 0 1 2 3 5...74 75 76 77
 ```
 
 ## redo
