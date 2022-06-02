@@ -57,4 +57,4 @@ Variáveis que começam com duas arrobas são variáveis de classe. Ou seja, ela
 @@x, @@y, @@cachorro133, @@cachorro_caramelo
 ```
 
-[Próximo](4-operadores-artimeticos.md)
+[Próximo](4-operadores-aritimeticos.md)
