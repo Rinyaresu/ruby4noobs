@@ -43,3 +43,4 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](ht
 3. [Variáveis](src/3-Basico%20da%20Linguagem/3-variaveis.md)
 4. [Operadores Aritméticos](src/3-Basico%20da%20Linguagem/4-operadores-artimeticos.md)
 5. [Operadores Relacionais](src/3-Basico%20da%20Linguagem/5-operadores-relacionais.md)
+6. [Condicionais](src/3-Basico%20da%20Linguagem/6-condicionais.md)
