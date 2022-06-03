@@ -122,9 +122,9 @@ end
 
 Interações dentro de um loop:
 
-1. break - sai do loop
-2. next - vai para a próxima iteração
-3. redo - repete o loop do início, sem reavaliar a condição ou pegar o próximo elemento
+1. `break` - sai do `loop`
+2. `next` - vai para a próxima iteração
+3. `redo` - repete o `loop` do início, sem reavaliar a condição ou pegar o próximo elemento
 
 Vamos utilizar essas interações:
 
