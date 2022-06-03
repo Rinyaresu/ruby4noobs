@@ -56,11 +56,14 @@ k.class # Podemos descobrir o tipo de objeto que uma variável aponta utilizando
 
 ### Bignum
 
-Bignum é um objeto que representa números maiores que o inteiro. Ou seja, números com muitos dígitos.
+Bignum também é um integer só que é um objeto que representa números maiores que o inteiro. Ou seja, números com muitos dígitos.
 
 ```ruby
 k = 12345678901234567890
 => 12345678901234567890
+
+k.class
+=> Integer # Como dito acima Bignum é um Integer.
 ```
 
 ### Float
@@ -70,6 +73,9 @@ Números decimais são chamados de float ou ponto flutuante.
 ```ruby
 k = 3.14
 => 3.14
+
+k.class
+=> Float
 ```
 
 ### Boolean
@@ -80,8 +86,14 @@ Literalmente, Boolean é um tipo de dado que representa um valor booleano. Ou se
 k = true
 => true
 
-1 == 2
+k.class
+=> TrueClass
+
+k = false
 => false
+
+k.class
+=> FalseClass
 ```
 
 ### Nil
@@ -89,11 +101,14 @@ k = true
 Em Ruby, o nil representa o **vazio**. Ele representa falta de valor. Ele não é zero. Porque zero é um número.
 
 ```ruby
-k = 1
-=> 1
+k = 0
+=> 0
 
 k.nil? # Podemos verificar se um objeto é nil utilizando o método nil?
 => false
+
+k.class
+=> NilClass
 ```
 
 ### String
@@ -103,6 +118,9 @@ String é um objeto que representa uma conjunto de caracteres. Strings são quai
 ```ruby
 k = "Ruby"
 => "Ruby"
+
+k.class
+=> String
 ```
 
 ### Array
@@ -112,6 +130,9 @@ Array é um objeto que representa uma **lista de valores cercada por colchetes e
 ```ruby
 k = [1, 2, 3]
 => [1, 2, 3]
+
+k.class
+=> Array
 ```
 
 Em Ruby os Arrays podem conter tipos de dados diferentes também, como esse onde misturamos inteiros, flutuantes e strings:
@@ -119,6 +140,9 @@ Em Ruby os Arrays podem conter tipos de dados diferentes também, como esse onde
 ```ruby
 k = [7, 7.7, "Ruby"]
 => [7, 7.7, "Ruby"]
+
+k.class
+=> Array
 ```
 
 ### Hash
@@ -128,6 +152,9 @@ As hashes são arrays indexados, com Chaves e Valores, que podem ser **quaisquer
 ```ruby
 k = { :Linguagem => "Ruby", :Ano => 1995, :Criador => ["Yukihiro", "Matz"] }
 => {:Linguagem=>"Ruby", :Ano=>1995, :Criador=>["Yukihiro", "Matz"]}
+
+k.class
+=> Hash
 ```
 
 ### Regexp
@@ -137,6 +164,9 @@ Uma expressão regular (ou regexp) é uma série de caracteres **cercados por ba
 ```ruby
 k = /Ruby/
 => /Ruby/
+
+k.class
+=> Regexp
 ```
 
 ### Symbols
@@ -147,6 +177,9 @@ e não como conteúdo.**
 ```ruby
 k = :Ruby
 => :Ruby
+
+k.class
+=> Symbol
 ```
 
 ### Range
@@ -156,6 +189,9 @@ Um range é formado por dois valores cercados por **parênteses** e separados po
 ```ruby
 k = (1..10)
 => 1..10
+
+k.class
+=> Range
 ```
 
 Normalmente, apenas dois pontos são usados. Se um terceiro ponto for usado, o **último valor no range será excluído.**
@@ -213,7 +249,9 @@ r.class # Encontrar o tipo de um objeto
 => String
 ```
 
-## Conversões
+## Conversões com métodos
+
+Aqui vamos aprender que conversão de um objeto para outro tipo de objeto é possível através de métodos.
 
 ### Converter uma string para um inteiro
 
