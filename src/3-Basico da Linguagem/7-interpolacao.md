@@ -56,3 +56,4 @@ puts "Ruby\tPHP"; # Aspas duplas + tabulação
 
 No exemplo acima, `\n` é a sequência de escape que representa o caractere de “nova linha”.
 
+[Próximo](8-entrada-e-saida.md)
