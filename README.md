@@ -44,3 +44,5 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](ht
 4. [Operadores Aritméticos](src/3-Basico%20da%20Linguagem/4-operadores-aritimeticos.md)
 5. [Operadores Relacionais](src/3-Basico%20da%20Linguagem/5-operadores-relacionais.md)
 6. [Condicionais](src/3-Basico%20da%20Linguagem/6-condicionais.md)
+7. [Interpolação](src/3-Basico%20da%20Linguagem/7-interpolacao.md)
+8. [Entrada e Saída](src/3-Basico%20da%20Linguagem/8-entrada-e-saida.md)
