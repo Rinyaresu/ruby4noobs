@@ -4,7 +4,7 @@
 
 Instalar Ruby pode ser uma experiencia muito frustrante. Por isso nesse guia nos vamos usar ferramentas de terceiros para facilitar a instalação.
 
-### Linux
+### Linux e MacOS
 
 Em linux nos precisamos instalar um programa chamado `asdf` para que possamos usar as versões de Ruby que queremos.
 
@@ -40,6 +40,12 @@ Pacman:
 
 ```bash
 git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
+```
+
+Brew(MacOS):
+
+```bash
+brew install asdf
 ```
 
 Para completar só nos falta instalar o `asdf`
