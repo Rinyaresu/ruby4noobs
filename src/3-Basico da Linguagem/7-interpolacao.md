@@ -19,6 +19,17 @@ criador = "Yukihiro 'Matz' Matsumoto" # Usando aspas simples dentro de aspas dup
 puts "A linguagem #{linguagem} foi criada em #{ano} e o criador é #{criador}"
 ```
 
+Outro exemplo:
+
+```ruby
+nome = "Mc Poze do Rodo"
+idade = "23"
+telefone = "21 96666-7777"
+cidade = ["São Paulo", "Rio de Janeiro"]
+
+puts "Olá, meu nome é #{nome} e tenho #{idade} anos, meu telefone é #{telefone} e moro em #{cidade[0]} e #{cidade[1]}"
+```
+
 ## Sequências de escape
 
 `Strings` não precisam conter apenas texto. Eles também podem conter caracteres de controle. A diferença entre aspas simples ou duplas é que as aspas duplas permitem sequências de escape, enquanto as aspas simples não permitem. Exemplo:
