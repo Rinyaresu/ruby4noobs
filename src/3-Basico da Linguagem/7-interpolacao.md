@@ -32,16 +32,26 @@ puts "Olá, meu nome é #{nome} e tenho #{idade} anos, meu telefone é #{telefon
 
 ## Sequências de escape
 
+### Tabela de Códigos Especiais
+
+|Código Especiais | Significado |
+|-----------------| ------------
+| \n              |  Nova linha |
+| \t              |  Tabulação  |
+
 `Strings` não precisam conter apenas texto. Eles também podem conter caracteres de controle. A diferença entre aspas simples ou duplas é que as aspas duplas permitem sequências de escape, enquanto as aspas simples não permitem. Exemplo:
 
 ```ruby
 puts 'Ruby\nPHP'; # Aspas simples
 
-puts "Ruby\PHP"; # Aspas duplas
+puts "Ruby\nPHP"; # Aspas duplas + nova linha
+
+puts "Ruby\tPHP"; # Aspas duplas + tabulação
 
 => Ruby\nPHP
    Ruby
    PHP
+   Ruby    PHP
 ```
 
 No exemplo acima, `\n` é a sequência de escape que representa o caractere de “nova linha”.
