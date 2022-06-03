@@ -41,15 +41,22 @@ Ruby não tem tipos primitivos, ou seja, não tem tipos primitivos como inteiros
 
 ### Integer
 
+Integer ou Inteiro (em português) é um objeto que representa os números mais convencionais que nos conhecemos. **Vírgulas não são permitidas, mas travessões são.**
+
 ```ruby
 k = 77
 => 77
+
+k = -77
+=> -77
 
 k.class # Podemos descobrir o tipo de objeto que uma variável aponta utilizando o método class.
 => Integer
 ```
 
 ### Bignum
+
+Bignum é um objeto que representa números maiores que o inteiro. Ou seja, números com muitos dígitos.
 
 ```ruby
 k = 12345678901234567890
@@ -58,12 +65,16 @@ k = 12345678901234567890
 
 ### Float
 
+Números decimais são chamados de float ou ponto flutuante.
+
 ```ruby
 k = 3.14
 => 3.14
 ```
 
 ### Boolean
+
+Literalmente, Boolean é um tipo de dado que representa um valor booleano. Ou seja, um valor que pode ser **verdadeiro ou falso.**
 
 ```ruby
 k = true
@@ -75,6 +86,8 @@ k = true
 
 ### Nil
 
+Em Ruby, o nil representa o **vazio**. Ele representa falta de valor. Ele não é zero. Porque zero é um número.
+
 ```ruby
 k = 1
 => 1
@@ -85,6 +98,8 @@ k.nil? # Podemos verificar se um objeto é nil utilizando o método nil?
 
 ### String
 
+String é um objeto que representa uma conjunto de caracteres. Strings são quaisquer tipos de caracteres (letras, dígitos, pontuação) **cercados por aspas. Aspas, simples ou duplas.**
+
 ```ruby
 k = "Ruby"
 => "Ruby"
@@ -92,19 +107,32 @@ k = "Ruby"
 
 ### Array
 
+Array é um objeto que representa uma **lista de valores cercada por colchetes e separada por vírgulas.** Em Ruby os arrays são dinâmicos, portanto você não precisa definir seu tamanho inicial, mas se preferir definir você também pode. Caso tenha criado um array com 10 posições e precise guardar um novo dado no array, você poderá fazê-lo sem problemas pois o array será expandido automaticamente conforme a necessidade
+
 ```ruby
 k = [1, 2, 3]
 => [1, 2, 3]
 ```
 
-### Hash
+Em Ruby os Arrays podem conter tipos de dados diferentes também, como esse onde misturamos inteiros, flutuantes e strings:
 
 ```ruby
-k = {a: 1, b: 2, c: 3}
-=> {a: 1, b: 2, c: 3}
+k = [7, 7.7, "Ruby"]
+=> [7, 7.7, "Ruby"]
+```
+
+### Hash
+
+As hashes são arrays indexados, com Chaves e Valores, que podem ser **quaisquer tipos de objetos.**
+
+```ruby
+k = { :Linguagem => "Ruby", :Ano => 1995, :Criador => ["Yukihiro", "Matz"] }
+=> {:Linguagem=>"Ruby", :Ano=>1995, :Criador=>["Yukihiro", "Matz"]}
 ```
 
 ### Regexp
+
+Uma expressão regular (ou regexp) é uma série de caracteres **cercados por barras**.  É utilizada para verificar se um texto segue um padrão.
 
 ```ruby
 k = /Ruby/
@@ -113,16 +141,31 @@ k = /Ruby/
 
 ### Symbols
 
+Símbolos são palavras que parecem variáveis. Novamente, elas podem conter letras, dígitos e travessões. **Mas elas começam com dois pontos**. Símbolos podem se parecer com um jeito engraçado de Strings, mas devemos pensar em símbolos como **significado
+e não como conteúdo.**
+
 ```ruby
 k = :Ruby
 => :Ruby
 ```
 
 ### Range
-  
+
+Um range é formado por dois valores cercados por **parênteses** e separados por **reticências** (na forma de dois ou três pontos).
+
 ```ruby
 k = (1..10)
 => 1..10
+```
+
+Normalmente, apenas dois pontos são usados. Se um terceiro ponto for usado, o **último valor no range será excluído.**
+
+```ruby
+(0...10) # representa os números de zero até nove exceto o último como podemos ver logo abaixo.
+=> 0...10
+
+(0...10).to_a # to_a converte o objeto em um array
+=> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 ## O que podemos fazer com esses objetos?
@@ -133,8 +176,16 @@ k = (1..10)
 r = "Ruby"
 p = "PHP"
 
-r + p # Concatenar strings
+r + " " + p # o + concatena as strings
 => "RubyPHP"
+```
+
+```ruby
+r << " " # o << também pode ser usado para concatena string
+=> "Ruby "
+
+r << p # o << concatena o valor de p
+=> "Ruby PHP"
 ```
 
 ### Comparar
