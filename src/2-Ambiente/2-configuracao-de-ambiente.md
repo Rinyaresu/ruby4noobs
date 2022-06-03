@@ -68,6 +68,14 @@ Adicionar no seu ~/.zshrc:
 
 Ou usar o plugin para o zsh: [asdf for oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/asdf).
 
+Fish & Git:
+
+```bash
+Adicionar no seu ~/.config/fish/config.fish:
+
+source ~/.asdf/asdf.fish
+```
+
 Agora é so usar o asdf e baixar os plugins de ruby e outras linguagens que quiser:
 
 ```bash
