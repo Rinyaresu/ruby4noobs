@@ -1,6 +1,6 @@
 # Entrada e Saída
 
-Nesse modulo vamos aprender entrada e saída, no nosso `hell-world` nos vimos como utilizar o `puts` para imprimir uma mensagem na tela. Isso é um exemplo de saída. Agora vamos aprender como utilizar o `gets` para ler uma mensagem do usuário. E entender o conceito de entrada e saída.
+Nesse modulo vamos aprender entrada e saída, no nosso [hello-world](../3-Basico%20da%20Linguagem/1-hello-world.md) nós vimos como utilizar o `puts` para imprimir uma mensagem na tela. Isso é um exemplo de saída. Agora vamos aprender como utilizar o `gets` para ler uma mensagem do usuário. E entender o conceito de entrada e saída.
 
 ## Saída (Output)
 

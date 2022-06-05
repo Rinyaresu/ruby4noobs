@@ -29,9 +29,9 @@ idade = "23"
 telefone = "21 96666-7777"
 cidade = ["São Paulo", "Rio de Janeiro"]
 
-puts "Olá, meu nome é #{nome} e tenho #{idade} anos, meu telefone é #{telefone} e moro em #{cidade[0]} e #{cidade[1]}"
+puts "Olá, meu nome é #{nome} e tenho #{idade} anos, meu telefone é #{telefone} e moro em #{cidade[0]} e no #{cidade[1]}"
 
-=> # Olá, meu nome é Mc Poze do Rodo e tenho 23 anos, meu telefone é 21 96666-7777 e moro em São Paulo e Rio de Janeiro
+=> # Olá, meu nome é Mc Poze do Rodo e tenho 23 anos, meu telefone é 21 96666-7777 e moro em São Paulo e no Rio de Janeiro
 ```
 
 ## Sequências de escape
