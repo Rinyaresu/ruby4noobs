@@ -22,7 +22,7 @@
 
 ## Sobre o Projeto
 
-O propósito desse repositório, além de contribuir para o projeto [4noobs](https://github.com/he4rt/4noobs), é inserir ao leitor os conceitos da linguagem **Ruby**.
+O propósito desse repositório, além de contribuir para o projeto [4noobs](https://github.com/he4rt/4noobs), e inserir ao leitor os conceitos da linguagem **Ruby**.
 
 ## ROADMAP
 
