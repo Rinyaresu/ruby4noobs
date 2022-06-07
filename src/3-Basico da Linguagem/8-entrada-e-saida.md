@@ -44,3 +44,5 @@ puts "Qual é a sua idade? " # Imprime a mensagem
 idade = gets.chomp # Lê a entrada do usuário e remove o \n do final
 puts "Seu nome é #{nome} e você tem #{idade} anos." # Imprime a mensagem com a interpolação
 ```
+
+[Próximo](9-metodos.md)
