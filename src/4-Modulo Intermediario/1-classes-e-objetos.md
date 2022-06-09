@@ -61,3 +61,65 @@ Executando o código acima, você vai ver que a classe `Pessoa` foi criada como 
 => #<Pessoa:0x00007f533fb23178 @nome="Mc Poze do Rodo", @idade=23>
 => Nome: Mc Poze do Rodo Idade: 23
 ```
+
+## attr_reader
+
+Anteriormente vimos como criar nossos **objetos** e suas propriedades usando variáveis de instancia, mas nos podemos lê-las?
+
+Vamos acessá-las usando as nossas variáveis de instância:
+
+```ruby
+class Pessoa
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+
+  def to_s
+  "Nome: #{@nome} Idade: #{@idade}"
+  end
+end
+
+Poze = Pessoa.new("Mc Poze do Rodo", 23)
+puts Poze.nome
+puts Poze.idade
+```
+
+Ops..
+
+Executando o código acima, você vai ver que a recebemos um **erro**.
+
+```txt
+=> undefined method 'nome' for #<Pessoa:0x00007f533fa44888 @nome="Mc Poze do Rodo", @idade=23> (NoMethodError)
+
+=> undefined method 'idade' for #<Pessoa:0x00007f533fa44888 @nome="Mc Poze do Rodo", @idade=23> (NoMethodError)
+```
+
+Essas variáveis são privadas do **objeto**, e não podem ser lidas sem um método de acesso. Então nos podemos resolver isso usando `attr_reader`:
+
+```ruby
+class Pessoa
+  attr_reader :nome, :idade
+  
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+
+  def to_s
+  "Nome: #{@nome} Idade: #{@idade}"
+  end
+end
+
+Poze = Pessoa.new("Mc Poze do Rodo", 23)
+puts Poze.nome
+puts Poze.idade
+```
+
+Executando o código agora nos vamos ter a resposta esperada:
+
+```txt
+=> Mc Poze do Rodo
+=> 23
+```
+
