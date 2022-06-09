@@ -47,3 +47,7 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](htt
 7. [Interpolação](src/3-Basico%20da%20Linguagem/7-interpolacao.md)
 8. [Entrada e Saída](src/3-Basico%20da%20Linguagem/8-entrada-e-saida.md)
 9. [Métodos](src/3-Basico%20da%20Linguagem/9-metodos.md)
+
+### Módulo Intermediário
+
+1. [Classes e Objetos](src/4-Modulo%20Intermediario/1-classes-e-objetos.md)
