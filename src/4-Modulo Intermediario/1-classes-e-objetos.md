@@ -179,3 +179,32 @@ Executando o código agora nos vamos ter a resposta esperada:
 => Nome: Mc Poze do Rodo Idade: 24
 ```
 
+## attr_accessor
+
+`attr_accessor` é um método que nos ajuda a fazer o que foi ensinado acima de uma forma mais fácil e menos repetitiva. Como por exemplo:
+
+```ruby
+class Pessoa
+  attr_accessor :nome, :idade
+  
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+
+  def to_s
+  "Nome: #{@nome} Idade: #{@idade}"
+  end
+end
+
+Poze = Pessoa.new("Mc Poze do Rodo", 23)
+Poze.idade = 21
+Poze.nome = "MC Poze Pitbull do Funk"
+puts Poze
+```
+
+Executando o código agora nos vamos ter a resposta esperada:
+
+```txt
+=> Nome: MC Poze Pitbull do Funk Idade: 21
+```
