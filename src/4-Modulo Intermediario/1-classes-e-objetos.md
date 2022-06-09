@@ -123,3 +123,59 @@ Executando o código agora nos vamos ter a resposta esperada:
 => 23
 ```
 
+## attr_writer
+
+E se agora nos quisermos trocar o nome ou a idade usando as variáveis?
+
+```ruby
+class Pessoa
+  attr_reader :nome, :idade
+  
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+
+  def to_s
+  "Nome: #{@nome} Idade: #{@idade}"
+  end
+end
+
+Poze = Pessoa.new("Mc Poze do Rodo", 23)
+Poze.idade = 24
+```
+
+Executando o código acima, você vai ver que recebemos um erro de `undefined method`:
+
+```irb
+=> undefined method `idade=' for #<Pessoa:0x00007f548af5c7c0 @nome="Mc Poze do Rodo", @idade=23> (NoMethodError)
+```
+
+No exemplo do `attr_reader` criamos **atributos de leitura**, que nos permitem a leitura da propriedade. Se precisarmos de algum **atributo de escrita**, para trocarmos a `idade` ou `nome` da `Pessoa`, podemos usar:
+
+```ruby
+class Pessoa
+  attr_reader :nome, :idade
+  attr_writer :idade 
+  
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+  end
+
+  def to_s
+  "Nome: #{@nome} Idade: #{@idade}"
+  end
+end
+
+Poze = Pessoa.new("Mc Poze do Rodo", 23)
+Poze.idade = 24
+puts Poze
+```
+
+Executando o código agora nos vamos ter a resposta esperada:
+
+```txt
+=> Nome: Mc Poze do Rodo Idade: 24
+```
+
