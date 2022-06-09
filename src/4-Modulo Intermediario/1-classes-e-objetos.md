@@ -17,7 +17,7 @@ puts Poze
 
 Executando o código acima, você vai ver que a classe `Pessoa` foi criada como um objeto.
 
-```ruby
+```txt
 => #<Pessoa:0x00007fcab271e1c8 @nome="Mc Poze do Rodo", @idade=23>
 => #<Pessoa:0x00007fcab271e1c8>
 ```
@@ -57,7 +57,7 @@ puts Poze
 
 Executando o código acima, você vai ver que a classe `Pessoa` foi criada como um objeto, e como o método `to_s` foi criado, ele foi chamado automaticamente.
 
-```ruby
+```txt
 => #<Pessoa:0x00007f533fb23178 @nome="Mc Poze do Rodo", @idade=23>
 => Nome: Mc Poze do Rodo Idade: 23
 ```
