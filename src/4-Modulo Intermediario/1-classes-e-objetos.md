@@ -208,3 +208,36 @@ Executando o código agora nos vamos ter a resposta esperada:
 ```txt
 => Nome: MC Poze Pitbull do Funk Idade: 21
 ```
+
+## Variáveis de Classe
+
+Também podemos criar [variáveis de classe](../3-Basico%20da%20Linguagem/3-variaveis.md), que são variáveis que são compartilhadas por todos os objetos da classe.
+
+```ruby
+class Pessoa
+  attr_accessor :nome, :idade
+  @@contador = 0
+  
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+    @@contador += 1
+  end
+
+  def to_s
+  "Nome: #{@nome} Idade: #{@idade}"
+  end
+  
+  def self.contador # utilizando self para não precisar de um objeto para acessar a variável de classe. Sem o self iriamos precisar usar o objeto Poze.contador para acessar a variável de classe.
+    @@contador
+  end
+end
+
+poze = Pessoa.new("Mc Poze do Rodo", 23)
+
+puts Pessoa.contador
+```
+
+
+
+[Próximo](2-dependencias.md)
