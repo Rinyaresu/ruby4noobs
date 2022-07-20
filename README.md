@@ -51,3 +51,4 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](htt
 ### Módulo Intermediário
 
 1. [Classes e Objetos](src/4-Modulo%20Intermediario/1-classes-e-objetos.md)
+2. [Dependências](src/4-Modulo%20Intermediario/2-gems.md)
