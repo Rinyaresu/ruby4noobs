@@ -238,6 +238,9 @@ poze = Pessoa.new("Mc Poze do Rodo", 23)
 puts Pessoa.contador
 ```
 
+## Herança
 
+Em Ruby, temos *herança única*, que significa que uma classe pode apenas ser criada herdando de apenas outra classe, reduzindo a complexidade do código.
+Dessa forma, podemos ao invés de repetir a definição de métodos por classes similares, pode realizar essa operação em uma única classe (também chamada de **superclasse**) e as outras que possuem métodos comuns (chamadas de **subclasses**) herdam essas funcionalidades da sua superclasse. A herança ajuda a reduzir substancialmente a duplicação de código.
 
 [Próximo](2-dependencias.md)
