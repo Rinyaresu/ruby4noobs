@@ -13,6 +13,9 @@ end
 Poze = Pessoa.new("Mc Poze do Rodo", 23)
 p Poze
 puts Poze
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+p pessoa
+puts pessoa
 ```
 
 Executando o código acima, você vai ver que a classe `Pessoa` foi criada como um objeto.
@@ -53,6 +56,9 @@ end
 Poze = Pessoa.new("Mc Poze do Rodo", 23)
 p Poze
 puts Poze
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+p pessoa
+puts pessoa
 ```
 
 Executando o código acima, você vai ver que a classe `Pessoa` foi criada como um objeto, e como o método `to_s` foi criado, ele foi chamado automaticamente.
@@ -83,6 +89,9 @@ end
 Poze = Pessoa.new("Mc Poze do Rodo", 23)
 puts Poze.nome
 puts Poze.idade
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+puts pessoa.nome
+puts pessoa.idade
 ```
 
 Ops..
@@ -114,6 +123,9 @@ end
 Poze = Pessoa.new("Mc Poze do Rodo", 23)
 puts Poze.nome
 puts Poze.idade
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+puts pessoa.nome
+puts pessoa.idade
 ```
 
 Executando o código agora nos vamos ter a resposta esperada:
@@ -143,6 +155,8 @@ end
 
 Poze = Pessoa.new("Mc Poze do Rodo", 23)
 Poze.idade = 24
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+pessoa.idade = 24
 ```
 
 Executando o código acima, você vai ver que recebemos um erro de `undefined method`:
@@ -171,6 +185,9 @@ end
 Poze = Pessoa.new("Mc Poze do Rodo", 23)
 Poze.idade = 24
 puts Poze
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+pessoa.idade = 24
+puts pessoa
 ```
 
 Executando o código agora nos vamos ter a resposta esperada:
@@ -201,6 +218,10 @@ Poze = Pessoa.new("Mc Poze do Rodo", 23)
 Poze.idade = 21
 Poze.nome = "MC Poze Pitbull do Funk"
 puts Poze
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+pessoa.idade = 21
+pessoa.nome = "MC Poze Pitbull do Funk"
+puts pessoa
 ```
 
 Executando o código agora nos vamos ter a resposta esperada:
@@ -234,6 +255,7 @@ class Pessoa
 end
 
 poze = Pessoa.new("Mc Poze do Rodo", 23)
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 
 puts Pessoa.contador
 ```
