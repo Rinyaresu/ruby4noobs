@@ -1,5 +1,7 @@
 # Dependências
 
+## O que são Dependências?
+
 Dependências são nada mais nada menos que bibliotecas externas que uma aplicação pode utilizar. E nos vamos aprender como as dependências funcionam no universo *Ruby*.
 
 ## Gems
