@@ -18,11 +18,15 @@ y = 20
 Constantes são variáveis que não podem ser alteradas. Por exemplo:
 
 ```ruby
-> Nome = "Ruby"
-> Nome = "PHP" 
+Nome = "Ruby"
+Nome = "PHP" 
+```
 
-> (irb):2: warning: already initialized constant Nome
-> (irb):1: warning: previous definition of Nome was here
+Executando:
+
+```txt
+=> (irb):2: warning: already initialized constant Nome
+=> (irb):1: warning: previous definition of Nome was here
 ```
 
 ## Variáveis Locais

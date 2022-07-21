@@ -16,8 +16,12 @@ if r == "Ruby"
 else
   puts "Não é Ruby"
 end
+```
 
-# Executando: É Ruby
+Executando:
+
+```txt
+=> É Ruby
 ```
 
 ## elsif
@@ -34,8 +38,12 @@ elsif r == "PHP"
 else
   puts "Não é Ruby nem PHP"
 end
+```
 
-# Executando: É PHP
+Executando:
+
+```txt
+=> É PHP
 ```
 
 ## unless
@@ -50,11 +58,15 @@ unless r == "Ruby"
 else
   puts "É Ruby"
 end
-
-# Executando: Não é Ruby
-
-# Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste positivo (if)
 ```
+
+Executando:
+
+```txt
+=> Não é Ruby 
+```
+
+Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste positivo (if)
 
 ## case
 
@@ -71,8 +83,12 @@ when "PHP"
 else
   puts "Não é Ruby nem PHP"
 end
+```
 
-# Executando: Não é Ruby nem PHP
+Executando:
+
+```txt
+=> Não é Ruby nem PHP
 ```
 
 ## for
@@ -83,8 +99,12 @@ end
 for i in 1..10
   puts i
 end
+```
 
-# Executando: 1 2 3 4 5 6 7 8 9 10
+Executando:
+
+```txt
+=> 1 2 3 4 5 6 7 8 9 10
 ```
 
 ## while
@@ -97,11 +117,15 @@ r = "JavaScript"
 while r != "Ruby"
   puts "Não é Ruby"
 end
-
-# Executando Não é Ruby
-
-# Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
 ```
+
+Executando:
+
+```txt
+=> Não é Ruby
+```
+
+Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
 
 ## until
 
@@ -114,8 +138,12 @@ until i == 7
   puts i
   i += 1
 end
+```
 
-# 0 1 2 3 4 5 6
+Executando:
+
+```txt
+=> 0 1 2 3 4 5 6
 ```
 
 ## loop
@@ -135,8 +163,12 @@ for i in (0..77)
   break if i == 4
   puts i
 end
+```
 
-# Executando: 0 1 2 3
+Executando:
+
+```txt
+=> 0 1 2 3
 ```
 
 ## next
@@ -146,8 +178,12 @@ for i in (0..77)
   next if i == 4
   puts i
 end
+```
 
-# Executando: 0 1 2 3 5...74 75 76 77
+Executando:
+
+```txt
+=> 0 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77
 ```
 
 ## redo
@@ -157,10 +193,14 @@ for i in (0..77)
   redo if i == 4
   puts i
 end
-
-# Executando: 0 1 2 3
-
-# Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
 ```
+
+Executando:
+
+```txt
+=> 0 1 2 3
+```
+
+Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
 
 [Próximo](7-interpolacao.md)

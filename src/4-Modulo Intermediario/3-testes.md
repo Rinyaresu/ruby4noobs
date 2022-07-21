@@ -44,7 +44,7 @@ end
 Ao executar o teste, o resultado será:
 
 ```ruby
-❯ ruby teste.rb
+=> ruby teste.rb
 Run options: --seed 19897
 
 # Running:
@@ -80,7 +80,7 @@ end
 Agora vamos executar o teste novamente e yay! 🎉
 
 ```ruby
-❯ ruby teste.rb
+=> ruby teste.rb
 Run options: --seed 41202
 
 # Running:

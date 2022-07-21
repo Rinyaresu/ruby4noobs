@@ -11,6 +11,8 @@ Os operadores relacionais padrões são:
 | Maior ou igual       | >=       | y >= x  | Resulta `true` se a for maior ou igual a b, resulta `false` caso contrário|
 | Menor ou igual       | <=       | y <= x  | Resulta `true` se a for menor ou igual a b, resulta `false` caso contrário|
 
+Exemplos:
+
 ```ruby
 10 == 5 # false
 10 != 5 # true

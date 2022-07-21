@@ -6,6 +6,11 @@ Interpolação trata-se de combinar strings, mas não usando o operador `+`. Des
 nome = "Kaique"
 
 puts "Olá meu nome é #{nome}"
+```
+
+Executando:
+
+```txt
 => Olá meu nome é Kaique
 ```
 
@@ -17,7 +22,11 @@ ano = 1995
 criador = "Yukihiro 'Matz' Matsumoto" # Usando aspas simples dentro de aspas duplas para conseguir usar aspas
 
 puts "A linguagem #{linguagem} foi criada em #{ano} e o criador é #{criador}"
+```
 
+Executando:
+
+```txt
 => # A linguagem Ruby foi criada em 1995 e o criador é Yukihiro 'Matz' Matsumoto
 ```
 
@@ -30,7 +39,11 @@ telefone = "21 96666-7777"
 cidade = ["São Paulo", "Rio de Janeiro"]
 
 puts "Olá, meu nome é #{nome} e tenho #{idade} anos, meu telefone é #{telefone} e moro em #{cidade[0]} e no #{cidade[1]}"
+```
 
+Executando:
+
+```
 => # Olá, meu nome é Mc Poze do Rodo e tenho 23 anos, meu telefone é 21 96666-7777 e moro em São Paulo e no Rio de Janeiro
 ```
 
@@ -51,7 +64,11 @@ puts 'Ruby\nPHP'; # Aspas simples
 puts "Ruby\nPHP"; # Aspas duplas + nova linha
 
 puts "Ruby\tPHP"; # Aspas duplas + tabulação
+```
 
+Executando:
+
+```txt
 => Ruby\nPHP
    Ruby
    PHP

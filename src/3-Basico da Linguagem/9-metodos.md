@@ -14,6 +14,11 @@ def fale_ruby
 end
 
 fale_ruby
+```
+
+Executando:
+
+```txt
 => "Ruby!"
 ```
 
@@ -29,6 +34,11 @@ def soma(a, b)
 end
 
 puts soma(5, 6)
+```
+
+Executando:
+
+```txt
 => 11
 ```
 
@@ -39,9 +49,7 @@ Mas no segundo exemplo é necessário usar **parênteses** por ser um método qu
 Vamos utilizar tudo que aprendermos anteriormente e criar um novo método e aprender um pouco da história do nosso Brasil:
 
 ```ruby
-
 # Dados levemente alterados para conseguirmos executar sem bugs 😁
-
 
 def historia_do_brasil(ano)
   case ano
