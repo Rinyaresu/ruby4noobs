@@ -50,6 +50,6 @@ Vamos fazer como anteriormente e listar os comandos disponíveis usando `bundle`
 - `bundle show`: mostra as dependências do projeto
 - `bundle init`: cria um arquivo `Gemfile` que contém as dependências do projeto
 
-Com isso estamos prontos para gerenciar e instalar as gems que usaremos depois.
+Com isso estamos prontos para gerenciar e instalar as gems que usaremos depois. 😌
 
 [Próximo](3-testes.md)

@@ -60,4 +60,6 @@ puts "Ruby\tPHP"; # Aspas duplas + tabulação
 
 No exemplo acima, `\n` é a sequência de escape que representa o caractere de “nova linha”.
 
+Com esses exemplos espero que você tenha obtido um pouco conhecimento sobre interpolação e a quantidade de coisas que você pode fazer com isso juntado como tudo que ja aprendemos. 😁
+
 [Próximo](8-entrada-e-saida.md)

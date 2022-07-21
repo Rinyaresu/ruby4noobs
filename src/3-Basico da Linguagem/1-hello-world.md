@@ -8,7 +8,7 @@ cd src
 touch hello-world.rb
 ```
 
-Esses comando vão criar a seguinte estrutura:
+Esses comandos vão criar a seguinte estrutura:
   
 ```ruby
 └── src
@@ -27,6 +27,7 @@ Para executar o arquivo `hello-world.rb`, basta executar o comando `ruby hello-w
 
 ```ruby
 ruby hello-world.rb
+> Hello World
 ```
 
 Com esse código já da para perceber nem que seja um pouco o porque que dizem que Ruby é a melhor amiga dos programadores. Você provavelmente consegue ler e entender o que o código quer dizer, mesmo que nunca tenha estudado ou visto outra linguagem de programação.

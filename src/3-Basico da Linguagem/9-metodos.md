@@ -40,7 +40,7 @@ Vamos utilizar tudo que aprendermos anteriormente e criar um novo método e apre
 
 ```ruby
 
-# Dados levemente alterados para conseguirmos executar sem bugs =)
+# Dados levemente alterados para conseguirmos executar sem bugs 😁
 
 
 def historia_do_brasil(ano)

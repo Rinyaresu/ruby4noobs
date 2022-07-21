@@ -309,4 +309,6 @@ r.join(",")
 => "7,7,7"
 ```
 
+Espero que com **toda** essa informação você tenha um pouco mais de conhecimento sobre os tipos de dados em *Ruby*. A maior dica é você tentar usar esses métodos na pratica em um projeto próprio. Se você não conseguir, não hesite em perguntar. 😊
+
 [Próximo](3-variaveis.md)
