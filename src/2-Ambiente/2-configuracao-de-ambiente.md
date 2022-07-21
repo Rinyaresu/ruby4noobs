@@ -58,7 +58,7 @@ Adicionar no seu ~/.bashrc:
 . $HOME/.asdf/asdf.sh
 ```
 
-Bash & Zsh:
+Zsh & Git:
 
 ```bash
 Adicionar no seu ~/.zshrc:
