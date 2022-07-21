@@ -10,9 +10,6 @@ class Pessoa
   end
 end
 
-Poze = Pessoa.new("Mc Poze do Rodo", 23)
-p Poze
-puts Poze
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 p pessoa
 puts pessoa
@@ -53,9 +50,6 @@ class Pessoa
   end
 end
 
-Poze = Pessoa.new("Mc Poze do Rodo", 23)
-p Poze
-puts Poze
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 p pessoa
 puts pessoa
@@ -86,9 +80,6 @@ class Pessoa
   end
 end
 
-Poze = Pessoa.new("Mc Poze do Rodo", 23)
-puts Poze.nome
-puts Poze.idade
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 puts pessoa.nome
 puts pessoa.idade
@@ -120,9 +111,6 @@ class Pessoa
   end
 end
 
-Poze = Pessoa.new("Mc Poze do Rodo", 23)
-puts Poze.nome
-puts Poze.idade
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 puts pessoa.nome
 puts pessoa.idade
@@ -153,8 +141,6 @@ class Pessoa
   end
 end
 
-Poze = Pessoa.new("Mc Poze do Rodo", 23)
-Poze.idade = 24
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 pessoa.idade = 24
 ```
@@ -182,9 +168,6 @@ class Pessoa
   end
 end
 
-Poze = Pessoa.new("Mc Poze do Rodo", 23)
-Poze.idade = 24
-puts Poze
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 pessoa.idade = 24
 puts pessoa
@@ -214,10 +197,6 @@ class Pessoa
   end
 end
 
-Poze = Pessoa.new("Mc Poze do Rodo", 23)
-Poze.idade = 21
-Poze.nome = "MC Poze Pitbull do Funk"
-puts Poze
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 pessoa.idade = 21
 pessoa.nome = "MC Poze Pitbull do Funk"
@@ -254,7 +233,6 @@ class Pessoa
   end
 end
 
-poze = Pessoa.new("Mc Poze do Rodo", 23)
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 
 puts Pessoa.contador
@@ -269,6 +247,46 @@ Executando o código nos vamos ter a resposta esperada:
 ## Herança
 
 Em Ruby, temos *herança única*, que significa que uma classe pode apenas ser criada herdando de apenas outra classe, reduzindo a complexidade do código.
-Dessa forma, podemos ao invés de repetir a definição de métodos por classes similares, pode realizar essa operação em uma única classe (também chamada de **superclasse**) e as outras que possuem métodos comuns (chamadas de **subclasses**) herdam essas funcionalidades da sua superclasse. A herança ajuda a reduzir substancialmente a duplicação de código.
+Dessa forma, podemos ao invés de repetir a definição de métodos por classes similares, pode realizar essa operação em uma única classe (também chamada de **superclasse**) e as outras que possuem métodos comuns (chamadas de **subclasses**) herdam essas funcionalidades da sua superclasse. **A herança ajuda a reduzir substancialmente a duplicação de código.** Como por exemplo:
+
+```ruby
+class Pessoa
+  attr_accessor :nome, :idade
+  @@contador = 0
+  
+  def initialize(nome, idade)
+    @nome = nome
+    @idade = idade
+    @@contador += 1
+  end
+
+  def to_s
+  "Nome: #{@nome} Idade: #{@idade}"
+  end
+  
+  def self.contador
+    @@contador
+  end
+end
+
+class OutraPessoa < Pessoa
+  def to_s
+    "Outra pessoa: #{super}"
+  end
+end
+
+pessoa = Pessoa.new("Mc Poze do Rodo", 23)
+pessoa2 = OutraPessoa.new("Beethoven", 56)
+
+puts pessoa
+puts pessoa2
+```
+
+Executando o código nos vamos ter a resposta esperada:
+
+```txt
+=> Nome: Mc Poze do Rodo Idade: 23
+=> Outra pessoa: Nome: Beethoven Idade: 56
+```
 
 [Próximo](2-dependencias.md)
