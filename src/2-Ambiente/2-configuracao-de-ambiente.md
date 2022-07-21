@@ -94,4 +94,12 @@ Em windows também usaremos programas de terceiros so que dessa vez será o [Rub
 2. Aceite os termos do contrato e clique no botão Next.
 3. Na próxima tela escolha uma pasta para instalação do ruby ou deixe a padrão mesmo e clique no checkbox “Add Ruby executables to your Path” e clique em Install.
 
+## Dica
+
+Antes de tudo recomendo que você use o `irb` para testar seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muito código pequeno e não precisaremos de um editor de texto necessariamente para testar o código. Mas é de sua escolha. 🙂
+
+```bash
+irb
+```
+
 [Próximo](3-ambiente-online.md)
