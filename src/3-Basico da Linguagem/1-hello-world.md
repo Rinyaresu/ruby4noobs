@@ -27,6 +27,11 @@ Para executar o arquivo `hello-world.rb`, basta executar o comando `ruby hello-w
 
 ```ruby
 ruby hello-world.rb
+```
+
+Executando:
+
+```txt
 => Hello World
 ```
 
