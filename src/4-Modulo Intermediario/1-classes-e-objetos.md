@@ -260,6 +260,12 @@ pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 puts Pessoa.contador
 ```
 
+Executando o código nos vamos ter a resposta esperada:
+
+```txt
+=> 1
+```
+
 ## Herança
 
 Em Ruby, temos *herança única*, que significa que uma classe pode apenas ser criada herdando de apenas outra classe, reduzindo a complexidade do código.
