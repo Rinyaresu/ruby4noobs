@@ -52,3 +52,4 @@ O propósito desse repositório, além de contribuir para o projeto [4noobs](htt
 
 1. [Classes e Objetos](src/4-Modulo%20Intermediario/1-classes-e-objetos.md)
 2. [Dependências](src/4-Modulo%20Intermediario/2-dependencias.md)
+3. [Testes Automatizados](src/4-Modulo%20Intermediario/3-testes.md)
