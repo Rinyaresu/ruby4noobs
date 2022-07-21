@@ -4,13 +4,13 @@ Dependências são nada mais nada menos que bibliotecas externas que uma aplica�
 
 ## Gems
 
-As **gems** são blibliotecas ou aplicações **Ruby** que podem ser usadas em qualquer projeto. O gerenciamento das gems é um recurso que vem a partir do [Rubygems](https://rubygems.org/). Se você instalou Ruby com o nosso versionador [asdf](/src/2-Ambiente/2-configuracao-de-ambiente.md), o suporte para gems está disponível. Agora vamos instalar uma gem. Para isso, vamos usar o comando `gem install`.
+As **gems** são bibliotecas ou aplicações **Ruby** que podem ser usadas em qualquer projeto. O gerenciamento das gems é um recurso que vem a partir do [Rubygems](https://rubygems.org/). Se você instalou Ruby com o nosso versionador [asdf](/src/2-Ambiente/2-configuracao-de-ambiente.md), o suporte para gems está disponível. Agora vamos instalar uma gem. Para isso, vamos usar o comando `gem install`.
 
 ```bash
 gem install <nome-da-gem>
 ```
 
-Tudo que você precisa fazer é digitar o nome da gem que você quer instalar. Se você não sabe o nome da gem, você pode procurar no [Rubygems](https://rubygems.org/) ou no [GitHub](https://github.com/). Alem disso, existem varios outros comandos. Vamos dar uma olhada neles usando `gem` como parâmetro:
+Tudo que você precisa fazer é digitar o nome da gem que você quer instalar. Se você não sabe o nome da gem, você pode procurar no [Rubygems](https://rubygems.org/) ou no [GitHub](https://github.com/). Além disso, existem vários outros comandos. Vamos dar uma olhada neles usando `gem` como parâmetro:
 
 - `gem list`: lista todas as gems instaladas
 - `gem update`: atualiza todas as gems instaladas
@@ -49,3 +49,5 @@ Vamos fazer como anteriormente e listar os comandos disponíveis usando `bundle`
 - `bundle init`: cria um arquivo `Gemfile` que contém as dependências do projeto
 
 Com isso estamos prontos para gerenciar e instalar as gems que usaremos depois.
+
+[Próximo](3-testes.md)
