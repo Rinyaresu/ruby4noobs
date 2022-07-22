@@ -26,7 +26,7 @@ Executando:
 
 ## elsif
 
-`elsif` é um `else` `if`
+`elsif` é um `else` junto com `if`
 
 ```ruby
 r = "PHP"

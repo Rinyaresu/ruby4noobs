@@ -6,6 +6,8 @@ Ruby é uma linguagem de tipagem dinâmica, ou seja, o tipo de dado é definido 
 
 Algumas das linguagens mais conhecidas a utilizarem tipagem dinâmica são: [Python](https://github.com/wendrewdevelop/python4noobs), [Ruby](https://github.com/rinyaresu/ruby4noobs), [PHP](https://github.com/DanielHe4rt/php4noobs).
 
+**ps: Esses códigos foram feitos usando o [irb](/src/2-Ambiente/2-configuracao-de-ambiente.md)**
+
 Na prática, tipagem dinâmica significa:
 
 ```ruby
@@ -98,7 +100,7 @@ k.class
 
 ### Nil
 
-Em Ruby, o nil representa o **vazio**. Ele representa falta de valor. Ele não é zero. Porque zero é um número.
+Em Ruby, o nil representa o **vazio**. Ele representa falta de valor. **Ele não é zero. Porque zero é um número.**
 
 ```ruby
 k = 0

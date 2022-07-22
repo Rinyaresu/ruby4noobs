@@ -27,7 +27,7 @@ puts "A linguagem #{linguagem} foi criada em #{ano} e o criador é #{criador}"
 Executando:
 
 ```txt
-=> # A linguagem Ruby foi criada em 1995 e o criador é Yukihiro 'Matz' Matsumoto
+=> A linguagem Ruby foi criada em 1995 e o criador é Yukihiro 'Matz' Matsumoto
 ```
 
 Outro exemplo:
@@ -43,8 +43,8 @@ puts "Olá, meu nome é #{nome} e tenho #{idade} anos, meu telefone é #{telefon
 
 Executando:
 
-```
-=> # Olá, meu nome é Mc Poze do Rodo e tenho 23 anos, meu telefone é 21 96666-7777 e moro em São Paulo e no Rio de Janeiro
+```txt
+=> Olá, meu nome é Mc Poze do Rodo e tenho 23 anos, meu telefone é 21 96666-7777 e moro em São Paulo e no Rio de Janeiro
 ```
 
 ## Sequências de escape

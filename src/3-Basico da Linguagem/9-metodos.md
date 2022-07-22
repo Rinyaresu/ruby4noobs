@@ -54,21 +54,21 @@ Vamos utilizar tudo que aprendermos anteriormente e criar um novo método e apre
 def historia_do_brasil(ano)
   case ano
   when 1500
-  "Chegada dos Portugueses ao Brasil"
+    'Chegada dos Portugueses ao Brasil'
   when 1530..1814
-  "Período colonial"
+    'Período colonial'
   when 1815..1821
-    "Período Reinado"
-  when 1822..1888 
-  "Período Imperial"
+    'Período Reinado'
+  when 1822..1888
+    'Período Imperial'
   when 1889..2022
-  "Em 1889. A escravidão foi abolida e o Brasil passou a ter um período republicano ditatorial" 
+    'Em 1889. A escravidão foi abolida e o Brasil passou a ter um período republicano ditatorial'
   end
 end
 
 puts historia_do_brasil(1889) # Aqui nos podemos mudar o ano para ver os resultados diferentes
 ```
 
-Espero que tenham entendido o que aconteceu nesse exemplo. Se não tiverem entendido, não se preocupem, vamos aprender mais sobre como usar métodos nas próximas aulas. 😁
+Espero que tenham entendido o que aconteceu nesse exemplo. Se não tiverem entendido, não se preocupem, vamos ver mais métodos nas próximas aulas. 😁
 
 [Próximo](../4-Modulo%20Intermediario/1-classes-e-objetos.md)

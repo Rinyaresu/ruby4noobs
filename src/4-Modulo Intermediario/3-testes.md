@@ -135,4 +135,4 @@ Para que a qualidade de seu código seja mantida (ou aumente), é necessário qu
 
 Para cada modificação que você fizer, execute novamente os testes. Assim você terá a confiança de que as alterações não afetaram o comportamento do projeto.
 
-Nesse ponto você ja espero que tenha entendido como funciona TDD na teoria, e também na prática. 😁
+Nesse ponto espero que tenha entendido como funciona TDD na teoria, e também na prática. 😁
