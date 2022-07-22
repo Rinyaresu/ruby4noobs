@@ -96,7 +96,7 @@ Em windows também usaremos programas de terceiros so que dessa vez será o [Rub
 
 ## Dica
 
-Antes de tudo recomendo que você use o `irb` para testar seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muito código pequeno e não precisaremos de um editor de texto necessariamente para testar o código. Mas é de sua escolha. 🙂
+Antes de tudo recomendo que você use o `irb` para testar seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muito códigos pequenos e não precisaremos de um editor de texto necessariamente para escrever o código. Mas é de sua escolha. 🙂
 
 ```bash
 irb

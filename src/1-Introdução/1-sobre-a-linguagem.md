@@ -4,6 +4,6 @@
 
 Ruby é uma linguagem elegante, flexível, e muito amigável com iniciantes, é rica em conteúdo e com uma enorme comunidade.
 
-E uma particularidade da linguagem Ruby é que **tudo é um objeto**, ou seja, todo o código é executado dentro de um objeto.
+E uma particularidade da linguagem Ruby é que **tudo é um objeto**, ou seja, todo o código é executado dentro de um objeto. Mais tarde entenderemos melhor o que isso significa.
 
 [Próximo](/src/2-Ambiente/1-editor-de-texto.md)
