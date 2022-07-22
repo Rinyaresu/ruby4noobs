@@ -6,9 +6,9 @@ Ruby é uma linguagem de tipagem dinâmica, ou seja, o tipo de dado é definido 
 
 Algumas das linguagens mais conhecidas a utilizarem tipagem dinâmica são: [Python](https://github.com/wendrewdevelop/python4noobs), [Ruby](https://github.com/rinyaresu/ruby4noobs), [PHP](https://github.com/DanielHe4rt/php4noobs).
 
-**ps: Esses códigos foram feitos usando o [irb](/src/2-Ambiente/2-configuracao-de-ambiente.md)**
-
 Na prática, tipagem dinâmica significa:
+
+> ps: esses códigos foram feitos usando o [irb](/src/2-Ambiente/2-configuracao-de-ambiente.md)
 
 ```ruby
 k = "teste"
@@ -161,7 +161,7 @@ k.class
 
 ### Regexp
 
-Uma expressão regular (ou regexp) é uma série de caracteres **cercados por barras**.  É utilizada para verificar se um texto segue um padrão.
+Uma expressão regular (ou regexp), é uma série de caracteres **cercados por barras**.  É utilizada para verificar se um texto segue um padrão.
 
 ```ruby
 k = /Ruby/
@@ -311,6 +311,6 @@ r.join(",")
 => "7,7,7"
 ```
 
-Espero que com **toda** essa informação você tenha um pouco mais de conhecimento sobre os tipos de dados em *Ruby*. A maior dica é você tentar usar esses métodos na pratica em um projeto próprio. Se você não conseguir, não hesite em perguntar. 😊
+Espero que com **toda** essa informação você tenha um pouco mais de conhecimento sobre os **tipos de dados** em *Ruby*. A maior dica é você tentar usar esses métodos na pratica em um projeto próprio. Se você não conseguir, não hesite em perguntar. 😊
 
 [Próximo](3-variaveis.md)

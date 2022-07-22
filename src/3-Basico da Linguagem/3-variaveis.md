@@ -2,7 +2,7 @@
 
 Variável é uma referência de um valor que é armazenado na memória do sistema. Em Ruby qualquer palavra simples, em minúsculas, é uma variável. E elas podem ser compostas por letras, dígitos e travessões. Por exemplo:
 
-```text
+```txt
 x, y, cachorro133, cachorro_caramelo
 ```
 
