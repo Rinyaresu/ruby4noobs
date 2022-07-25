@@ -66,7 +66,7 @@ def historia_do_brasil(ano)
   end
 end
 
-puts historia_do_brasil(1889) # Aqui nos podemos mudar o ano para ver os resultados diferentes
+puts historia_do_brasil(1889) # Aqui vocês podem mudar o ano para ver os resultados diferentes
 ```
 
 Espero que tenham entendido o que aconteceu nesse exemplo. Se não tiverem entendido, não se preocupem, vamos ver mais métodos nas próximas aulas. 😁

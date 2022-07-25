@@ -47,7 +47,7 @@ $x, $y, $cachorro133, $cachorro_caramelo
 
 ## Variáveis de Instância
 
-Variáveis que começam com um arroba são variáveis de instância. Ou seja, elas são acessíveis apenas dentro de um método.
+Variáveis que começam com uma arroba são variáveis de instância. Ou seja, elas são acessíveis apenas dentro de um método.
 
 ```ruby
 @x, @y, @cachorro133, @cachorro_caramelo

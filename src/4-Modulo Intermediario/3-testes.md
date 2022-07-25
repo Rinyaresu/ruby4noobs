@@ -31,8 +31,8 @@ Para começarmos é necessário que você:
 Com tudo pronto, vamos começar criando o teste que espera que a soma de dois números seja igual a quatro.
 
 ```ruby
-require 'minitest/autorun' # aqui nos declaramos o requirimento do minitest que nos instalamos anteriormente
-require_relative './soma' # aqui nos declaramos outro requirimento mas dessa vez do outro arquivo que nos criamos.
+require 'minitest/autorun' # aqui nos declaramos o requerimento do minitest que nos instalamos anteriormente
+require_relative './soma' # aqui nos declaramos outro requerimento mas dessa vez do outro arquivo que nos criamos.
 
 class SomaTest < Minitest::Test # aqui criamos uma classe que herda de Minitest::Test
   def test_soma

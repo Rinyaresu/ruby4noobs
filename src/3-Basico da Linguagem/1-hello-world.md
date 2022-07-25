@@ -1,6 +1,6 @@
 # O famoso "Hello World" e um pouco mais
 
-Apos á instalação do Ruby, nada melhor que começarmos escrevendo o famoso "Hello World". Para isso, vamos criar um diretório chamado `src` e dentro dele um arquivo chamado `hello-world.rb`:
+Apos a instalação do Ruby, nada melhor que começarmos escrevendo o famoso "Hello World". Para isso, vamos criar um diretório chamado `src` e dentro dele um arquivo chamado `hello-world.rb`:
 
 ```bash
 mkdir src
@@ -35,9 +35,9 @@ Executando:
 => Hello World
 ```
 
-Com esse código já da para perceber nem que seja um pouco, o porque dizem que a linguagem Ruby é a melhor amiga dos programadores. Você provavelmente consegue ler e entender o que o código quer dizer, mesmo que nunca tenha estudado ou visto outra linguagem de programação.
+Com esse código já da para perceber nem que seja um pouco, o porquê dizem que a linguagem Ruby é a melhor amiga dos programadores. Você provavelmente consegue ler e entender o que o código quer dizer, mesmo que nunca tenha estudado ou visto outra linguagem de programação.
 
-Vamos escrever um pouco mais de código para percebemos como amigável é essa linguagem, primeiro vamos criar outro arquivo só que dessa vez ele sera chamado de `5-ruby.rb`:
+Vamos escrever um pouco mais de código para percebemos como amigável é essa linguagem, primeiro vamos criar outro arquivo só que dessa vez ele será chamado de `5-ruby.rb`:
 
 ```bash
 touch 5-ruby.rb

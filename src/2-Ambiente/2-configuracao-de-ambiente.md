@@ -76,7 +76,7 @@ Adicionar no seu ~/.config/fish/config.fish:
 source ~/.asdf/asdf.fish
 ```
 
-Agora é so usar o asdf e baixar os plugins de ruby e outras linguagens que quiser:
+Agora é so usar o asdf e baixar os plugins de ruby e outras linguagens que quiserem:
 
 ```bash
 asdf plugin-add ruby # Instala o plugin de ruby
@@ -96,7 +96,7 @@ Em windows também usaremos programas de terceiros so que dessa vez será o [Rub
 
 ## Dica
 
-Antes de tudo recomendo que você use o `irb` para testar seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muito códigos pequenos e não precisaremos de um editor de texto necessariamente para escrever o código. Mas é de sua escolha. 🙂
+Antes de tudo recomendo que você use o `irb` para testar seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muitos códigos pequenos e não precisaremos de um editor de texto necessariamente para escrever o código. Mas é de sua escolha. 🙂
 
 ```bash
 irb

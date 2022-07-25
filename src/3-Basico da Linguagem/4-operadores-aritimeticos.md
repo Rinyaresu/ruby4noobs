@@ -2,7 +2,7 @@
 
 Os operadores aritméticos padrões são:
 
-| Tipo                 | Simbolo | Ação                                 |
+| Tipo                 | Símbolo | Ação                                 |
 | ---                  | ---     | ---                                  |
 | Soma                 | +       | Soma dois valores                    |
 | Subtração            | -       | Subtrai dois valores                 |

@@ -100,7 +100,7 @@ k.class
 
 ### Nil
 
-Em Ruby, o nil representa o **vazio**. Ele representa falta de valor. **Ele não é zero. Porque zero é um número.**
+Em Ruby, o nil representa o **vazio**. Ele representa falta de valor. **Ele não é zero. Por que zero é um número.**
 
 ```ruby
 k = 0
@@ -115,7 +115,7 @@ k.class
 
 ### String
 
-String é um objeto que representa uma conjunto de caracteres. Strings são quaisquer tipos de caracteres (letras, dígitos, pontuação) **cercados por aspas. Aspas, simples ou duplas.**
+String é um objeto que representa um conjunto de caracteres. Strings são quaisquer tipos de caracteres (letras, dígitos, pontuação) **cercados por aspas. Aspas, simples ou duplas.**
 
 ```ruby
 k = "Ruby"

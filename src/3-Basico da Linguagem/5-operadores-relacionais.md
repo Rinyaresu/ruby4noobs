@@ -2,7 +2,7 @@
 
 Os operadores relacionais padrões são:
 
-| Tipo                 | Simbolo  | Exemplo | Ação                                                                      |
+| Tipo                 | Símbolo  | Exemplo | Ação                                                                      |
 | ---                  | ---      |  ---    | ---                                                                       |
 | Igualdade            | ==       | y == x  | Resulta `true` ou `false` se tiver igualdade                              |
 | Diferença            | !=       | y != x  | Resulta `true` ou `false` se tiver diferença                              |

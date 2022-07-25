@@ -34,7 +34,7 @@ Podemos inicializar várias dessas variáveis dentro do método `initialize`, qu
 
 Podemos ver acima que usando `puts` para verificar o nosso **objeto**, foi mostrada somente a referência dele na memória. Mas, para vermos o objeto completo, precisamos transformar o objeto em string.
 
-Vamos fazer um método novo na classe para mostrar as informações de uma maneira mais bonita. Se lembra que em [tipos de dados](../3-Basico%20da%20Linguagem/2-tipos-de-dados.md) utilizamos um método chamado `to_s`, que converte o objeto em uma `String`? vamos usar ele.
+Vamos fazer um método novo na classe para mostrar as informações de uma maneira mais bonita. Se lembra que em [tipos de dados](../3-Basico%20da%20Linguagem/2-tipos-de-dados.md) utilizamos um método chamado `to_s`, que converte o objeto em uma `String`? Vamos usar ele.
 
 Vamos criar um método para a nossa classe:
 
@@ -64,7 +64,7 @@ Executando o código acima, você vai ver que a classe `Pessoa` foi criada como 
 
 ## attr_reader
 
-Anteriormente vimos como criar nossos **objetos** e suas propriedades usando variáveis de instancia, mas nos podemos lê-las?
+Anteriormente vimos como criar nossos **objetos** e suas propriedades usando variáveis de instância, mas nos podemos lê-las?
 
 Vamos acessá-las usando as nossas variáveis de instância:
 
