@@ -1,6 +1,6 @@
 # Interpolação de String
 
-Interpolação trata-se de combinar strings, mas não usando o operador `+`. Dessa vez utilizaremos o símbolo `#{}` para colocarmos o que queremos interpolar dentro de uma string. Em ruby é possível interpolar qualquer tipo de dado. E é uma boa prática utilizar aspas duplas `""` para interpolar strings. Como por exemplo:
+Interpolação trata-se de combinar strings, mas não usando o operador `+`. Dessa vez utilizaremos o símbolo `#{ }` para colocarmos o que queremos interpolar dentro de uma string. Em ruby é possível interpolar qualquer tipo de dado. E é uma boa prática utilizar aspas duplas `""` para interpolar strings. Como por exemplo:
 
 ```ruby
 nome = "Kaique"

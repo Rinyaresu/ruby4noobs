@@ -289,6 +289,6 @@ Executando o código nos vamos ter a resposta esperada:
 => Outra pessoa: Nome: Beethoven Idade: 56
 ```
 
-Espero que tenha entendido como funcionam classes e objetos em ruby. Isso não é tudo desse tema, mas é o suficiente para que você possa começar a aprender a programar usando classes e objetos. 😉
+Espero que tenha entendido como funcionam **classes e objetos em ruby**. Isso não é tudo desse tema, mas é o suficiente para que você possa começar a aprender a programar usando classes e objetos. 😉
 
 [Próximo](2-dependencias.md)

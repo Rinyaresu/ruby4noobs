@@ -58,7 +58,7 @@ k.class # Podemos descobrir o tipo de objeto que uma variável aponta utilizando
 
 ### Bignum
 
-Bignum também é um integer só que é um objeto que representa números maiores que o inteiro. Ou seja, números com muitos dígitos.
+Bignum também é um **integer** só que é um objeto que representa números maiores que o inteiro. Ou seja, **números com muitos dígitos**.
 
 ```ruby
 k = 12345678901234567890
@@ -70,7 +70,7 @@ k.class
 
 ### Float
 
-Números decimais são chamados de float ou ponto flutuante.
+Números decimais são chamados de **float ou ponto flutuante**.
 
 ```ruby
 k = 3.14
@@ -127,7 +127,7 @@ k.class
 
 ### Array
 
-Array é um objeto que representa uma **lista de valores cercada por colchetes e separada por vírgulas.** Em Ruby os arrays são dinâmicos, portanto você não precisa definir seu tamanho inicial, mas se preferir definir você também pode. Caso tenha criado um array com 10 posições e precise guardar um novo dado no array, você poderá fazê-lo sem problemas pois o array será expandido automaticamente conforme a necessidade
+Array é um objeto que representa uma **lista de valores cercada por colchetes e separada por vírgulas.** Em Ruby os arrays são dinâmicos, portanto você não precisa definir seu tamanho inicial, mas se preferir definir você também pode. Caso tenha criado um array com 10 posições e precise guardar um novo dado no array, você poderá fazê-lo sem problemas pois o array será expandido automaticamente conforme a necessidade.
 
 ```ruby
 k = [1, 2, 3]
@@ -149,7 +149,7 @@ k.class
 
 ### Hash
 
-As hashes são arrays indexados, com Chaves e Valores, que podem ser **quaisquer tipos de objetos.**
+As hashes são arrays indexados, com **Chaves e Valores**, que podem ser **quaisquer tipos de objetos.**
 
 ```ruby
 k = { :Linguagem => "Ruby", :Ano => 1995, :Criador => ["Yukihiro", "Matz"] }
@@ -219,10 +219,10 @@ r + " " + p # o + concatena as strings
 ```
 
 ```ruby
-r << " " # o << também pode ser usado para concatena string
+r << " " # << também pode ser usado para concatena string
 => "Ruby "
 
-r << p # o << concatena o valor de p
+r << p # concatena o valor de p
 => "Ruby PHP"
 ```
 

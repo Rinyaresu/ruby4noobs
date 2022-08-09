@@ -10,7 +10,7 @@ A função `puts` é utilizada para imprimir uma mensagem na tela. Como por exem
 puts "Hello World"
 ```
 
-Nós podemos "dar puts" em qualquer lugar do código. E com qualquer quase todos os tipo de dado. Por exemplo:
+Nós podemos "*dar puts*" em qualquer lugar do código. E com quase todos os [tipos de dados](./2-tipos-de-dados.md). Por exemplo:
 
 ```ruby
 puts "Hello World"

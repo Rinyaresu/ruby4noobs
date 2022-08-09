@@ -6,7 +6,7 @@ Testes automatizados se fundamentam no uso de ferramentas para controlar a execu
 
 ## Por que usar testes automatizados?
 
-Um dos principais motivos é dar confiança para modificar o seu código. Mas este não é o único motivo.
+Um dos principais motivos é dar confiança para modificar o seu código. **Mas este não é o único motivo.**
 
 - Redução de custos
 - Redução de erros
@@ -121,18 +121,18 @@ Após adicionar o novo teste, você deve executar todos os testes do seu sistema
 
 ### Etapa 3 — Escreva o código
 
-A próxima etapa é escrever o código, fazendo com que o teste passe. Você não precisa escrever o melhor código que já existiu e totalmente aceitável que o código seja escrito de uma forma deselegante, sem preocupação com a performance ou outro requisito.
+A próxima etapa é escrever o código, **fazendo com que o teste passe**. Você não precisa escrever o melhor código que já existiu e totalmente aceitável que o código seja escrito de uma forma deselegante, sem preocupação com a performance ou outro requisito.
 
-Lembre-se que o objetivo desta etapa é fazer com que o teste passe; por isso, nada de adicionar funcionalidades extras por qualquer que seja o motivo.
+**Lembre-se que o objetivo desta etapa é fazer com que o teste passe;** por isso, nada de adicionar funcionalidades extras por qualquer que seja o motivo.
 
 ### Etapa 4 — Execute os testes
 
-Execute novamente os testes. Se eles passarem, o desenvolvedor tem a confiança de que os requisitos foram atingidos e que não quebra ou degrada as funcionalidades existentes. Se os testes não passarem, ajuste o código que você escreveu até que o teste passe.
+**Execute novamente os testes**. Se eles passarem, o desenvolvedor tem a confiança de que os requisitos foram atingidos e que não quebra ou degrada as funcionalidades existentes. Se os testes não passarem, ajuste o código que você escreveu até que o teste passe.
 
 ### Etapa 5 — Refatore o código
 
-Para que a qualidade de seu código seja mantida (ou aumente), é necessário que você refatore o código do projeto constantemente. Altere a organização de arquivos, reduza a duplicação de lógica, faça com que nomes de classes, variáveis e métodos indiquem claramente sua intenção e propósito. Se os métodos forem muito grandes, extraia para outros métodos ou classes, tornando sua responsabilidade menor, mas melhor definida.
+**Para que a qualidade de seu código seja mantida (ou aumente), é necessário que você refatore o código do projeto constantemente.** Altere a organização de arquivos, reduza a duplicação de lógica, faça com que nomes de classes, variáveis e métodos indiquem claramente sua intenção e propósito. Se os métodos forem muito grandes, extraia para outros métodos ou classes, tornando sua responsabilidade menor, mas melhor definida.
 
-Para cada modificação que você fizer, execute novamente os testes. Assim você terá a confiança de que as alterações não afetaram o comportamento do projeto.
+**Para cada modificação que você fizer, execute novamente os testes.** Assim você terá a confiança de que as alterações não afetaram o comportamento do projeto.
 
-Nesse ponto espero que tenha entendido como funciona TDD na teoria, e também na prática. 😁
+Nesse ponto espero que tenha entendido como funciona testes automatizados e TDD na teoria, e também na prática. 😁
