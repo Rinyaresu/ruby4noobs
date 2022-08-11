@@ -66,7 +66,7 @@ Adicionar no seu ~/.zshrc:
 . $HOME/.asdf/asdf.sh
 ```
 
-Ou usar o plugin para o zsh: [asdf for oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/asdf).
+Ou usar o plugin para o oh-my-zsh: [asdf for oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/asdf).
 
 Fish & Git:
 
@@ -96,7 +96,7 @@ Em windows também usaremos programas de terceiros so que dessa vez será o [Rub
 
 ## Dica
 
-Antes de tudo recomendo que você use o `irb` para testar seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muitos códigos pequenos e não precisaremos de um editor de texto necessariamente para escrever o código. Mas é de sua escolha. 🙂
+Antes de tudo recomendo que você use o `irb` como uma escolha para escrever seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muitos códigos pequenos e não precisaremos de um editor de texto necessariamente para escrever o código. Mas é de sua escolha. 🙂
 
 ```bash
 irb
