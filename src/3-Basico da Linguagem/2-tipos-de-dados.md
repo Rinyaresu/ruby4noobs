@@ -109,6 +109,12 @@ k = 0
 k.nil? # Podemos verificar se um objeto é nil utilizando o método nil?
 => false
 
+k = nil
+=> nil
+
+k.nil?
+=> true
+
 k.class
 => NilClass
 ```
