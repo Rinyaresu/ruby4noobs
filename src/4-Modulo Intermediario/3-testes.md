@@ -91,11 +91,11 @@ Finished in 0.001383s, 723.0135 runs/s, 723.0135 assertions/s.
 1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
 ```
 
-Na primeira etapa, vimos o que é o teste falhar (🔴).
+Na primeira etapa, vimos o que é o teste **falhar** (🔴).
 
-Fomos então para a segunda, e vimos o teste passar (🟢).
+Fomos então para a segunda, e vimos o teste **passar** (🟢).
 
-Agora, vamos para a última etapa que é melhorar o código (refatorar 🔵). Nossos argumentos do método soma não têm um nome adequado. "a" e "b" não dizem muita coisa pra quem lê o código meses depois. Portanto, poderíamos mudá-los para numero_a e numero_b, respectivamente.
+Agora, vamos para a última etapa que é **melhorar o código** (refatorar 🔵). Nossos argumentos do método soma não têm um nome adequado. "a" e "b" não dizem muita coisa pra quem lê o código meses depois. Portanto, poderíamos mudá-los para numero_a e numero_b, respectivamente.
 
 ```ruby
 def soma(numero_a, numero_b)
@@ -109,7 +109,7 @@ Com toda essa explicação, você aprendeu como funciona **testes automatizados 
 
 Entendendo o **Test-Driven Development** ![tdd-image](https://marsner.com/wp-content/uploads/test-driven-development-TDD.png)
 
-*Test-Driven Development* é uma técnica que se baseia na repetição de ciclos curtos de desenvolvimento. Primeiro, o desenvolvedor escreve um teste automatizado que define o comportamento da nova funcionalidade. Então, o desenvolvedor escreve a menor quantidade de código necessária para fazer este teste passar. Finalmente, o desenvolvedor pode refatorar o código para níveis de qualidade aceitáveis.
+**Test-Driven Development** é uma técnica que se baseia na repetição de ciclos curtos de desenvolvimento. Primeiro, o desenvolvedor **escreve um teste** automatizado que define o comportamento da nova funcionalidade. Então, o desenvolvedor escreve a menor quantidade de código necessária para fazer este teste **passar**. Finalmente, o desenvolvedor pode **refatorar** o código para níveis de qualidade aceitáveis.
 
 ### Etapa 1 — Adicione um teste
 

@@ -31,7 +31,7 @@ Executando:
 
 ## Variáveis Locais
 
-Variáveis locais são variáveis que só existem dentro de um bloco. Por exemplo:
+Variáveis locais são **variáveis que só existem dentro de um bloco**. Por exemplo:
 
 ```ruby
 x = 10
@@ -39,7 +39,7 @@ x = 10
 
 ## Variáveis Globais
 
-Variáveis que começam com um cifrão são globais. Ou seja, elas são acessíveis de qualquer lugar do código.
+Variáveis que começam com um cifrão são **globais**. Ou seja, elas são acessíveis de qualquer lugar do código.
 
 ```ruby
 $x, $y, $cachorro133, $cachorro_caramelo
@@ -47,7 +47,7 @@ $x, $y, $cachorro133, $cachorro_caramelo
 
 ## Variáveis de Instância
 
-Variáveis que começam com uma arroba são variáveis de instância. Ou seja, elas são acessíveis apenas dentro de um método.
+Variáveis que começam com uma arroba **são variáveis de instância**. Ou seja, elas são acessíveis apenas dentro de um método.
 
 ```ruby
 @x, @y, @cachorro133, @cachorro_caramelo
@@ -55,7 +55,7 @@ Variáveis que começam com uma arroba são variáveis de instância. Ou seja, e
 
 ## Variáveis de Classe
 
-Variáveis que começam com duas arrobas são variáveis de classe. Ou seja, elas são acessíveis apenas dentro de uma classe.
+Variáveis que começam com duas arrobas são **variáveis de classe**. Ou seja, elas são acessíveis apenas dentro de uma classe.
 
 ```ruby
 @@x, @@y, @@cachorro133, @@cachorro_caramelo

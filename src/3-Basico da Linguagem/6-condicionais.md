@@ -1,6 +1,6 @@
 # Condicionais
 
-É importante saber que tudo em Ruby acaba com `end`
+É importante saber que tudo em Ruby acaba com `end`.
 
 ## if..else
 
@@ -26,7 +26,7 @@ Executando:
 
 ## elsif
 
-`elsif` é um `else` junto com `if`
+`elsif` é um `else` junto com `if`.
 
 ```ruby
 r = "PHP"
@@ -66,11 +66,11 @@ Executando:
 => Não é Ruby 
 ```
 
-Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste positivo (if)
+Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste positivo (if).
 
 ## case
 
-`case` é utilizado para executar um bloco de código de acordo com uma condição. É possível utilizar mais de uma condição. Podemos utilizar o case para fazer algumas comparações interessantes
+`case` é utilizado para executar um bloco de código de acordo com uma condição. É possível utilizar mais de uma condição. Podemos utilizar o case para fazer algumas comparações interessantes.
 
 ```ruby
 r = "JavaScript" 
@@ -93,7 +93,7 @@ Executando:
 
 ## for
 
-`for` é utilizado para executar um bloco de código de acordo com um determinado número de vezes. É possível utilizar o `for` para fazer algumas repetições interessantes
+`for` é utilizado para executar um bloco de código de acordo com um determinado número de vezes. É possível utilizar o `for` para fazer algumas repetições interessantes.
 
 ```ruby
 for i in 1..10
@@ -109,7 +109,7 @@ Executando:
 
 ## while
 
-`while` é utilizado para executar um bloco de código enquanto uma condição for verdadeira. (Faça enquanto)
+`while` é utilizado para executar um bloco de código enquanto uma condição for verdadeira. (Faça enquanto).
 
 ```ruby
 r = "JavaScript"
@@ -129,7 +129,7 @@ Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
 
 ## until
 
-`until` é utilizado para executar um bloco de código enquanto uma condição for falsa. (Faça até que)
+`until` é utilizado para executar um bloco de código enquanto uma condição for falsa. (Faça até que).
 
 ```ruby
 i = 0
