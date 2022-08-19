@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="./assets/header_4noobs.svg">
+  </a>
+</p>
 
-You can use the [editor on GitHub](https://github.com/Rinyaresu/ruby4noobs/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+<p align="center">
+  <h2 align="center">Ruby4Noobs</h2>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<p align="center">
+  <a href="https://www.ruby-lang.org/pt"  target="_blank">
+    <img src="./assets/ruby.svg" alt="Imagem da linguagem" width="120">
+  </a>
+</p>
 
-### Markdown
+  <p align="center">
+    <a href="https://github.com/Rinyaresu/ruby4noobs/issues/new">Report Bug</a>
+    ·
+    <a href="https://github.com/Rinyaresu/ruby4noobs/issues/new">Request Feature</a>
+  </p>
+</p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Sobre o Projeto
 
-```markdown
-Syntax highlighted code block
+O propósito desse repositório, além de contribuir para o projeto [4noobs](https://github.com/he4rt/4noobs). é inserir ao leitor os conceitos da linguagem **Ruby**.
 
-# Header 1
-## Header 2
-### Header 3
+## ROADMAP
 
-- Bulleted
-- List
+### Introdução
 
-1. Numbered
-2. List
+1. [Sobre a linguagem](src/1-Introdução/1-sobre-a-linguagem.md)
 
-**Bold** and _Italic_ and `Code` text
+### Ambiente
 
-[Link](url) and ![Image](src)
-```
+1. [Editor de texto](src/2-Ambiente/1-editor-de-texto.md)
+2. [Configuração de ambiente](src/2-Ambiente/2-configuracao-de-ambiente.md)
+3. [Ambiente Online](src/2-Ambiente/3-ambiente-online.md)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Básico da linguagem
 
-### Jekyll Themes
+1. [Hello World](src/3-Basico%20da%20Linguagem/1-hello-world.md)
+2. [Tipos de dados](src/3-Basico%20da%20Linguagem/2-tipos-de-dados.md)
+3. [Variáveis](src/3-Basico%20da%20Linguagem/3-variaveis.md)
+4. [Operadores Aritméticos](src/3-Basico%20da%20Linguagem/4-operadores-aritimeticos.md)
+5. [Operadores Relacionais](src/3-Basico%20da%20Linguagem/5-operadores-relacionais.md)
+6. [Condicionais](src/3-Basico%20da%20Linguagem/6-condicionais.md)
+7. [Interpolação](src/3-Basico%20da%20Linguagem/7-interpolacao.md)
+8. [Entrada e Saída](src/3-Basico%20da%20Linguagem/8-entrada-e-saida.md)
+9. [Métodos](src/3-Basico%20da%20Linguagem/9-metodos.md)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Rinyaresu/ruby4noobs/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Módulo Intermediário
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. [Classes e Objetos](src/4-Modulo%20Intermediario/1-classes-e-objetos.md)
+2. [Dependências](src/4-Modulo%20Intermediario/2-dependencias.md)
+3. [Testes Automatizados](src/4-Modulo%20Intermediario/3-testes.md)
