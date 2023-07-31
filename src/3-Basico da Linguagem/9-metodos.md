@@ -1,12 +1,12 @@
 # Métodos
 
-Olá. Vamos ver como escrever nossos próprios métodos. Note que podemos definir métodos facilmente em Ruby, usando `def`, terminando (**sempre**) com `end`. Segundo as convenções de Ruby, nos nomes dos métodos deve-se usar letras minúsculas separando as palavras com um sublinhado (_).
+Olá! Neste módulo, vamos aprender sobre métodos em Ruby. Os métodos são blocos de código que executam uma ação específica e podem receber parâmetros para realizar tarefas com base nos valores passados a eles.
 
-## Mas, o que são métodos?
+## Definindo um Método
 
-Métodos são o meio que utilizamos para ler, modificar e definir os atributos de um objeto.
+Em Ruby, podemos definir nossos próprios métodos usando a palavra-chave `def`, seguida do nome do método em letras minúsculas, seguido pelos parâmetros (se houver) entre parênteses. O bloco de código do método é delimitado por `end`. É uma boa prática usar parênteses mesmo quando não há parâmetros.
 
-Exemplo de método básico:
+Aqui está um exemplo básico de um método chamado `fale_ruby` que simplesmente imprime a palavra "Ruby!" na tela:
 
 ```ruby
 def fale_ruby
@@ -24,9 +24,9 @@ Executando:
 
 ## Parâmetros
 
-Para passar informações a um método pode-se incluir um ou mais **parâmetros** depois do seu nome. Nesse caso, **os parênteses devem ser utilizados**, apesar de não ser obrigatório, mas a boa prática pede a sua utilização
+Os métodos em Ruby podem receber parâmetros, que são valores que podemos passar quando chamamos o método. Para definir um método com parâmetros, basta incluir seus nomes entre os parênteses após o nome do método.
 
-Exemplo de retorno de valor com o uso de parênteses e envio de variáveis como argumentos:
+Por exemplo, vamos criar um método chamado `soma` que recebe dois parâmetros e retorna a soma deles:
 
 ```ruby
 def soma(a, b)
@@ -42,14 +42,13 @@ Executando:
 => 11
 ```
 
-Ao executarmos o primeiro exemplo podemos perceber que não é obrigatório usar **parênteses** para chamar o método, e nem `return` para retornar um valor, como é necessário em outras linguagens.
+Neste exemplo, o método soma recebe dois parâmetros (a e b) e retorna a soma deles.
 
-Mas no segundo exemplo é necessário usar **parênteses** por ser um método que **recebe dois parâmetros**.
+### História do Brasil - Exemplo com Método e Switch Case
 
-Vamos utilizar tudo que aprendermos anteriormente e criar um novo método e aprender um pouco da história do nosso Brasil:
+> Dados levemente alterados para conseguirmos executar sem bugs 😁
 
 ```ruby
-# Dados levemente alterados para conseguirmos executar sem bugs 😁
 
 def historia_do_brasil(ano)
   case ano
@@ -66,9 +65,11 @@ def historia_do_brasil(ano)
   end
 end
 
-puts historia_do_brasil(1889) # Aqui vocês podem mudar o ano para ver os resultados diferentes
+puts historia_do_brasil(1889) # Você pode alterar o ano aqui para ver os resultados correspondentes
 ```
 
-Espero que tenham entendido o que aconteceu nesse exemplo. Se não tiverem entendido, não se preocupem, vamos ver mais métodos nas próximas aulas. 😁
+Neste exemplo, o método `historia_do_brasil` recebe o ano como parâmetro e, com base no ano fornecido, retorna uma string descrevendo o período histórico correspondente.
+
+Agora você já tem uma ideia de como criar e usar métodos em Ruby. Continue praticando e explorando mais conceitos para melhorar suas habilidades de programação em Ruby.
 
 [Próximo](../4-Modulo%20Intermediario/1-classes-e-objetos.md)

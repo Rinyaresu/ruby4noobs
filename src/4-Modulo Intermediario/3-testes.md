@@ -2,16 +2,19 @@
 
 ## O que são testes automatizados?
 
-Testes automatizados se fundamentam no uso de ferramentas para controlar a execução de testes de software. O objetivo é basicamente escrever um software que testará seu programa de forma automática. Testes automatizados também tem como objetivo dar a confiança necessária para modificar o seu código.
+Os testes automatizados baseiam-se no uso de ferramentas para controlar a execução de testes de software. O objetivo é escrever um software que testará o programa automaticamente. Além disso, os testes automatizados têm como objetivo fornecer a confiança necessária para modificar o código.
 
 ## Por que usar testes automatizados?
 
-Um dos principais motivos é dar confiança para modificar o seu código. **Mas este não é o único motivo.**
+Embora dar confiança para modificar o código seja um motivo fundamental, existem outros benefícios importantes:
 
-- Redução de custos
-- Redução de erros
-- Indicativo de término de uma tarefa
-- Evitar regressões de código
+- Redução de custos: Testes automatizados podem identificar problemas mais cedo no ciclo de desenvolvimento, evitando custos elevados de correções em estágios avançados do projeto.
+
+- Redução de erros: Testes automatizados ajudam a identificar e corrigir erros no código antes que eles causem problemas em produção.
+
+- Indicativo de término de uma tarefa: Quando todos os testes automatizados passam com sucesso, isso indica que a tarefa foi concluída corretamente.
+
+- Evitar regressões de código: Os testes automatizados garantem que as alterações no código não quebrem funcionalidades existentes.
 
 ## Como usar testes automatizados em Ruby?
 
@@ -28,7 +31,7 @@ Para começarmos é necessário que você:
 - Salva os dois arquivos no mesmo diretório
 - Abra o diretório dos arquivos pelo terminal
 
-Com tudo pronto, vamos começar criando o teste que espera que a soma de dois números seja igual a quatro.
+Agora, criaremos um teste que espera que a soma de dois números seja igual a quatro:
 
 ```ruby
 require 'minitest/autorun' # aqui nos declaramos o requerimento do minitest que nos instalamos anteriormente
@@ -41,35 +44,21 @@ class SomaTest < Minitest::Test # aqui criamos uma classe que herda de Minitest:
 end
 ```
 
-Ao executar o teste, o resultado será:
+Se executarmos o teste agora, receberemos uma mensagem de erro indicando que o método soma não está definido. Vamos solucionar esse erro criando uma função no arquivo soma.rb que retorna a soma de dois números:
 
 ```ruby
 => ruby teste.rb
 Run options: --seed 19897
 
 # Running:
-
-E
-
-Error:
-SomaTest#test_soma:
 NoMethodError: undefined method `soma' for #<SomaTest:0x00007f6ce8acb668 @NAME="test_soma", @failures=[#<Minitest::UnexpectedError: Unexpected exception>], @assertions=0, @time=0.0006974000007176073>
-
     assert_equal(5, soma(3, 2))
                     ^^^^
     teste.rb:6:in `test_soma'
 
-
-rails test teste.rb:5
-
-
 Finished in 0.003121s, 320.3588 runs/s, 0.0000 assertions/s.
 1 runs, 0 assertions, 0 failures, 1 errors, 0 skips
 ```
-
-A mensagem de erro que recebemos indica `NoMethodError: undefined method 'soma'` ou seja, que não existe um método chamado `soma`.
-
-Então vamos solucionar esse erro criando uma função no arquivo `soma.rb` que retorna o valor da soma de dois números:
 
 ```ruby
 def soma(a, b)
@@ -84,9 +73,6 @@ Agora vamos executar o teste novamente e yay! 🎉
 Run options: --seed 41202
 
 # Running:
-
-.
-
 Finished in 0.001383s, 723.0135 runs/s, 723.0135 assertions/s.
 1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
 ```
@@ -135,4 +121,4 @@ A próxima etapa é escrever o código, **fazendo com que o teste passe**. Você
 
 **Para cada modificação que você fizer, execute novamente os testes.** Assim você terá a confiança de que as alterações não afetaram o comportamento do projeto.
 
-Nesse ponto espero que tenha entendido como funciona testes automatizados e TDD na teoria, e também na prática. 😁
+Com essa explicação, você aprendeu como funcionam os testes automatizados em Ruby e também viu na prática o que é o TDD. Agora você está preparado para utilizar essas técnicas no seu desenvolvimento com mais confiança e eficácia. 😁

@@ -2,13 +2,13 @@
 
 ## Instalação do Ruby
 
-Instalar Ruby pode ser uma experiencia muito frustrante. Por isso nesse guia nos vamos usar ferramentas de terceiros para facilitar a instalação.
+Se você é como eu, sabe o quão frustrante pode ser instalar novas ferramentas, especialmente quando se trata de linguagens de programação. Mas calma,vou te mostrar um jeito fácil e eficiente de instalar o Ruby, tornando toda essa experiência muito mais agradável.
 
-### Linux e MacOS
+## Instalando o Ruby no Linux e MacOS 🐧🍎
 
-Em linux nos precisamos instalar um programa chamado `asdf` para que possamos usar as versões de Ruby que queremos.
+Para facilitar a instalação do Ruby no Linux, vamos utilizar a ferramenta mágica chamada `asdf`. Ela nos permite instalar as versões do Ruby que desejamos com facilidade.
 
-Para realizar a instalação do programa `asdf` é necessário ter a ferramenta `curl` instalada no sistema. Então vamos instalar
+Primeiro, precisamos ter a ferramenta `curl` instalada no sistema. Se você ainda não tem, não se preocupe, vou te mostrar como instalá-la de forma rápida
 
 Ubuntu:
 
@@ -28,12 +28,12 @@ Arch Linux:
 sudo pacman -S curl
 ```
 
-Com `curl` instalado, vamos baixar o programa `asdf`
+Com o `curl` instalado, vamos baixar o programa `asdf`. Escolha a opção que se aplica ao seu sistema:
 
 Git:
 
 ```bash
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.
 ```
 
 Pacman:
@@ -52,51 +52,52 @@ Para completar só nos falta instalar o `asdf`
 
 Bash & Git:
 
-```bash
-Adicionar no seu ~/.bashrc:
+Adicione a seguinte linha ao seu arquivo ~/.bashrc:
 
+```bash
 . $HOME/.asdf/asdf.sh
 ```
 
 Zsh & Git:
 
-```bash
-Adicionar no seu ~/.zshrc:
+Adicione a seguinte linha ao seu arquivo ~/.zshrc:
 
+```bash
 . $HOME/.asdf/asdf.sh
 ```
 
-Ou usar o plugin para o oh-my-zsh: [asdf for oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/asdf).
+Ou use o plugin para o oh-my-zsh [asdf for oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/asdf).
 
 Fish & Git:
 
+Adicione a seguinte linha ao seu arquivo ~/.config/fish/config.fish:
+
 ```bash
-Adicionar no seu ~/.config/fish/config.fish:
 
 source ~/.asdf/asdf.fish
 ```
 
-Agora é so usar o asdf e baixar os plugins de ruby e outras linguagens que quiserem:
+Agora está tudo configurado! Podemos usar o asdf para baixar o Ruby e outras linguagens facilmente:
 
 ```bash
 asdf plugin-add ruby # Instala o plugin de ruby
 
-asdf install ruby 3.1.2 # Instala o ruby na ultima versão no momento que é a 3.1.2
+asdf install ruby 3.1.2 # Instala o Ruby na versão 3.1.2
 
 asdf global ruby 3.1.2  # Informa ao asdf que você quer usar o ruby 3.1.2 em todo o sistema
 ```
 
 ### Windows
 
-Em windows também usaremos programas de terceiros so que dessa vez será o [RubyInstaller](https://rubyinstaller.org/)
+No Windows, utilizaremos outro programa de terceiros, o [RubyInstaller](https://rubyinstaller.org/). Vamos seguir os passos simples para ter o Ruby instalado no seu ambiente:
 
 1. Execute o arquivo de instalação e clique em Next na primeira tela.
 2. Aceite os termos do contrato e clique no botão Next.
-3. Na próxima tela escolha uma pasta para instalação do ruby ou deixe a padrão mesmo e clique no checkbox “Add Ruby executables to your Path” e clique em Install.
+3. Na próxima tela, escolha uma pasta para a instalação do Ruby ou deixe a opção padrão marcada. Em seguida, clique na caixa de seleção “Add Ruby executables to your Path” e clique em Install.E pronto! O Ruby estará instalado no seu sistema Windows.
 
-## Dica
+## Dica: Use o irb para Desenvolver com Facilidade 💎
 
-Antes de tudo recomendo que você use o `irb` como uma escolha para escrever seu código, pois ele é um ambiente de desenvolvimento de código fácil de usar. Bastar ir no terminal e digitar `irb` para abrir o ambiente de desenvolvimento. Recomendo usar pois vamos ter muitos códigos pequenos e não precisaremos de um editor de texto necessariamente para escrever o código. Mas é de sua escolha. 🙂
+Antes de tudo, deixo uma dica preciosa: utilize o irb como ambiente de desenvolvimento para escrever seu código Ruby. O irb é fácil de usar e permite que você teste rapidamente pequenos trechos de código sem a necessidade de um editor de texto. Para abri-lo, basta ir ao terminal e digitar irb.
 
 ```bash
 irb

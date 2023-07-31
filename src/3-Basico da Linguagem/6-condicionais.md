@@ -1,12 +1,10 @@
-# Condicionais
+# Condicionais - Tomando Decisões em Ruby
 
 É importante saber que tudo em Ruby acaba com `end`.
 
 ## if..else
 
-`if` é uma estrutura de controle que executa uma determinada ação caso uma condição seja verdadeira.
-
-`else` é uma estrutura de controle que executa uma determinada ação caso uma condição seja falsa.
+A estrutura `if..else` é utilizada para executar um bloco de código caso uma condição seja verdadeira e, caso contrário, executar outro bloco de código.
 
 ```ruby
 r = "Ruby"
@@ -18,6 +16,8 @@ else
 end
 ```
 
+Esse tipo de código é usando `else` pode se tornar bem confuso, as vezes é melhor fazer um bom teste positivo (if) usando [early return](https://medium.com/swlh/return-early-pattern-3d18a41bba8).
+
 Executando:
 
 ```txt
@@ -26,7 +26,7 @@ Executando:
 
 ## elsif
 
-`elsif` é um `else` junto com `if`.
+A estrutura `elsif` é utilizada para avaliar outfa condição caso a primeira condição do `if` seja falsa.
 
 ```ruby
 r = "PHP"
@@ -48,7 +48,7 @@ Executando:
 
 ## unless
 
-`unless` é o contrário do `if` e ele é utilizado para negar uma condição e executar o bloco caso a condição seja falsa.
+A estrutura `unless` é utilizada para executar um bloco de código caso uma condição seja falsa, ou seja, ela é o contrário do `if`.
 
 ```ruby
 r = "PHP"
@@ -63,17 +63,15 @@ end
 Executando:
 
 ```txt
-=> Não é Ruby 
+=> Não é Ruby
 ```
-
-Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste positivo (if).
 
 ## case
 
-`case` é utilizado para executar um bloco de código de acordo com uma condição. É possível utilizar mais de uma condição. Podemos utilizar o case para fazer algumas comparações interessantes.
+A estrutura `case` é utilizada para executar um bloco de código de acordo com o valor de uma variável. Podemos utilizar o `case` para fazer várias comparações de forma mais clara.
 
 ```ruby
-r = "JavaScript" 
+r = "JavaScript"
 
 case r
 when "Ruby"
@@ -91,9 +89,13 @@ Executando:
 => Não é Ruby nem PHP
 ```
 
-## for
+## Loops (for, while, until) - Executando Blocos de Código Repetidamente
 
-`for` é utilizado para executar um bloco de código de acordo com um determinado número de vezes. É possível utilizar o `for` para fazer algumas repetições interessantes.
+Os loops são utilizados para executar um bloco de código repetidamente enquanto uma condição específica é atendida.
+
+### for
+
+A estrutura `for` é utilizada para executar um bloco de código um determinado número de vezes, especificado por um range ou uma coleção.
 
 ```ruby
 for i in 1..10
@@ -107,9 +109,9 @@ Executando:
 => 1 2 3 4 5 6 7 8 9 10
 ```
 
-## while
+### while
 
-`while` é utilizado para executar um bloco de código enquanto uma condição for verdadeira. (Faça enquanto).
+A estrutura `while` é utilizada para executar um bloco de código enquanto uma condição específica for verdadeira.
 
 ```ruby
 r = "JavaScript"
@@ -125,11 +127,11 @@ Executando:
 => Não é Ruby
 ```
 
-Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
+**Cuidado**: Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre, pois a condição nunca se torna falsa.
 
-## until
+### until
 
-`until` é utilizado para executar um bloco de código enquanto uma condição for falsa. (Faça até que).
+A estrutura `until` é utilizada para executar um bloco de código enquanto uma condição específica for falsa.
 
 ```ruby
 i = 0
@@ -146,17 +148,15 @@ Executando:
 => 0 1 2 3 4 5 6
 ```
 
-## loop
+## Interrompendo e Repetindo Loops
 
-Interações dentro de um loop:
+Dentro de um loop, podemos utilizar três interações:
 
-1. `break` - sai do `loop`
-2. `next` - vai para a próxima iteração
-3. `redo` - repete o `loop` do início, sem reavaliar a condição ou pegar o próximo elemento
+1. break: Sai do loop.
+2. next: Vai para a próxima iteração.
+3. redo: Repete o loop do início, sem reavaliar a condição ou pegar o próximo elemento.
 
-Vamos utilizar essas interações:
-
-## break
+### break
 
 ```ruby
 for i in (0..77)
@@ -201,6 +201,8 @@ Executando:
 => 0 1 2 3
 ```
 
-Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
+Cuidado: Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre, pois o redo repete o loop do início, sem reavaliar a condição ou pegar o próximo elemento.
+
+Neste capítulo, aprendemos sobre as estruturas condicionais e loops em Ruby, que nos permitem tomar decisões e executar blocos de código repetidamente com base em condições específicas. Essas estruturas são fundamentais para controlar o fluxo do programa e criar lógicas mais avançadas.
 
 [Próximo](7-interpolacao.md)
