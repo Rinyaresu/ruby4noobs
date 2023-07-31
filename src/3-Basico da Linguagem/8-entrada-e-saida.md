@@ -1,6 +1,6 @@
 # Entrada e Saída
 
-Nesse módulo vamos aprender entrada e saída, no nosso [hello-world](../3-Basico%20da%20Linguagem/1-hello-world.md) nós vimos como utilizar o `puts` para imprimir uma mensagem na tela. Isso é um exemplo de saída. Agora vamos aprender como utilizar o `gets` para ler uma mensagem do usuário. E entender o conceito de entrada e saída.
+Neste módulo, vamos aprender sobre entrada e saída de dados em Ruby, ou seja, como interagir com o usuário através de mensagens impressas na tela e lendo respostas fornecidas pelo usuário.
 
 ## Saída (Output)
 
@@ -10,7 +10,7 @@ A função `puts` é utilizada para imprimir uma mensagem na tela. Como por exem
 puts "Hello World"
 ```
 
-Nós podemos "*dar puts*" em qualquer lugar do código. E com quase todos os [tipos de dados](./2-tipos-de-dados.md). Por exemplo:
+Nós podemos "_dar puts_" em qualquer lugar do código. E com quase todos os [tipos de dados](./2-tipos-de-dados.md). Por exemplo:
 
 ```ruby
 puts "Hello World"
@@ -25,9 +25,9 @@ puts (1..10)
 
 ## Entrada (Input)
 
-Agora vamos usar a interpolação que aprendemos anteriormente para imprimir uma mensagem e ler uma entrada do usuário.
+Para ler uma entrada do usuário, podemos usar a função `gets`. No entanto, é importante notar que o `gets` também inclui o caractere de nova linha (`\n`) ao final da entrada, o que pode não ser desejado em muitos casos. Para evitar isso, usamos o método `chomp` para remover o caractere de nova linha.
 
-A função `gets` é utilizada para ler uma mensagem do usuário. Como por exemplo:
+Aqui está um exemplo de como ler uma entrada do usuário e exibir o que foi digitado:
 
 ```ruby
 puts "Digite algo: "
@@ -35,14 +35,20 @@ text = gets
 puts "Você digitou: #{text}"
 ```
 
-Vamos tentar utilizar tudo que aprendermos como interpolação, variáveis e tipos de dados.
+No exemplo acima, o programa solicita que o usuário digite algo. Em seguida, ele lê a entrada e a atribui à variável text. Por fim, imprime a mensagem "Você digitou:" seguida do que o usuário digitou.
+
+Podemos combinar a leitura de entrada com a interpolação de strings para criar interações mais ricas com o usuário:
 
 ```ruby
-puts "Qual é o seu nome? " # Imprime a mensagem
-nome = gets.chomp # Lê a entrada do usuário e remove o \n do final
-puts "Qual é a sua idade? " # Imprime a mensagem
-idade = gets.chomp # Lê a entrada do usuário e remove o \n do final
-puts "Seu nome é #{nome} e você tem #{idade} anos." # Imprime a mensagem com a interpolação
+puts "Qual é o seu nome? "
+nome = gets.chomp
+puts "Qual é a sua idade? "
+idade = gets.chomp
+puts "Seu nome é #{nome} e você tem #{idade} anos."
 ```
+
+No exemplo acima, o programa solicita ao usuário que digite seu nome e idade, lê as entradas e, em seguida, usa a interpolação para exibir uma mensagem personalizada com as informações fornecidas pelo usuário.
+
+Continue praticando a saída e entrada de dados para criar interações interessantes em seus programas Ruby.
 
 [Próximo](9-metodos.md)

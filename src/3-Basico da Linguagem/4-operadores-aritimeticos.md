@@ -1,24 +1,26 @@
-# Operadores Aritméticos
+# Operadores Aritméticos - Realizando Cálculos em Ruby
+
+Neste capítulo, vamos explorar os operadores aritméticos em Ruby, que nos permitem realizar cálculos matemáticos em nossos programas. Os operadores aritméticos são fundamentais para executar operações como soma, subtração, multiplicação, divisão e muito mais. Veremos como utilizar esses operadores de forma prática, tanto com valores fixos como com variáveis.
 
 Os operadores aritméticos padrões são:
 
-| Tipo                 | Símbolo | Ação                                 |
-| ---                  | ---     | ---                                  |
-| Soma                 | +       | Soma dois valores                    |
-| Subtração            | -       | Subtrai dois valores                 |
-| Multiplicação        | *       | Multiplica dois valores              |
-| Divisão              | /       | Divide dois valores                  |
-| Módulo               | %       | Resto de divisão                     |
-| Potência             | **      | Calcula a potência entre dois números|
+| Tipo          | Símbolo | Ação                                          |
+| ------------- | ------- | --------------------------------------------- |
+| Soma          | +       | Realiza a adição de dois valores              |
+| Subtração     | -       | Realiza a subtração de dois valores           |
+| Multiplicação | \*      | Realiza a multiplicação de dois valores       |
+| Divisão       | /       | Realiza a divisão de dois valores             |
+| Módulo        | %       | Retorna o resto da divisão entre dois valores |
+| Potência      | \*\*    | Calcula a potência entre dois números         |
 
 ```ruby
-10 + 5 
+10 + 5
 => 15
 
 10 - 5
 => 5
 
-10 * 5 
+10 * 5
 => 50
 
 10 / 5
@@ -36,18 +38,21 @@ Os operadores aritméticos padrões são:
 
 ## Operadores Aritméticos com Variáveis
 
-No capítulo sobre as [variáveis](3-variaveis.md) mostramos como declarar variáveis e você também pode usar esses operadores com as variáveis ensinadas anteriormente. Como por exemplo:
+Podemos utilizar os operadores aritméticos com as variáveis que aprendemos anteriormente:
 
 ```ruby
 x = 10
 y = 20
 
-x + y # 30
-x - y # -10
-x * y # 200
-x / y # 0
-x % y # 10
-x ** y # 1000000
+x + y # Soma: 10 + 20 = 30
+x - y # Subtração: 10 - 20 = -10
+x * y # Multiplicação: 10 * 20 = 200
+x / y # Divisão: 10 / 20 = 0
+x % y # Módulo (Resto da Divisão): 10 % 20 = 10
 ```
+
+Neste capítulo, aprendemos sobre os operadores aritméticos em Ruby e como utilizá-los para realizar cálculos matemáticos. Os operadores aritméticos são uma parte fundamental da programação e são frequentemente utilizados em diversas situações.
+
+No próximo capítulo, exploraremos os operadores relacionais e como utilizá-los para fazer comparações entre valores.
 
 [Próximo](5-operadores-relacionais.md)

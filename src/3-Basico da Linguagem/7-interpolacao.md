@@ -1,25 +1,24 @@
 # Interpolação de String
 
-Interpolação trata-se de combinar strings, mas não usando o operador `+`. Dessa vez utilizaremos o símbolo `#{ }` para colocarmos o que queremos interpolar dentro de uma string. Em ruby é possível interpolar qualquer tipo de dado. E é uma boa prática utilizar aspas duplas `""` para interpolar strings. Como por exemplo:
+A interpolação de strings em Ruby é uma técnica poderosa para combinar variáveis e outros valores dentro de uma string de forma mais conveniente. Para interpolar valores em uma string, usamos o símbolo `#{}` e colocamos a expressão que desejamos interpolar dentro desse bloco. É uma prática comum usar aspas duplas para definir as strings que serão interpoladas.
 
 ```ruby
 nome = "Kaique"
-
-puts "Olá meu nome é #{nome}"
+puts "Olá, meu nome é #{nome}"
 ```
 
 Executando:
 
 ```txt
-=> Olá meu nome é Kaique
+=> Olá, meu nome é Kaique
 ```
 
-Vamos usar todos os tipos de dados:
+Você também pode interpolar outros tipos de dados, como números e arrays:
 
 ```ruby
 linguagem = "Ruby"
 ano = 1995
-criador = "Yukihiro 'Matz' Matsumoto" # Usando aspas simples dentro de aspas duplas para conseguir usar aspas
+criador = "Yukihiro 'Matz' Matsumoto"
 
 puts "A linguagem #{linguagem} foi criada em #{ano} e o criador é #{criador}"
 ```
@@ -33,7 +32,7 @@ Executando:
 Outro exemplo:
 
 ```ruby
-nome = "Mc Poze do Rodo"
+nome = "John Doe"
 idade = "23"
 telefone = "21 96666-7777"
 cidade = ["São Paulo", "Rio de Janeiro"]
@@ -44,25 +43,25 @@ puts "Olá, meu nome é #{nome} e tenho #{idade} anos, meu telefone é #{telefon
 Executando:
 
 ```txt
-=> Olá, meu nome é Mc Poze do Rodo e tenho 23 anos, meu telefone é 21 96666-7777 e moro em São Paulo e no Rio de Janeiro
+=> Olá, meu nome é John Doe e tenho 23 anos, meu telefone é 21 96666-7777 e moro em São Paulo e no Rio de Janeiro
 ```
 
 ## Sequências de escape
 
+Além disso, as strings em Ruby permitem o uso de sequências de escape, que são caracteres especiais que representam ações específicas na string. Alguns exemplos comuns são:
+
 ### Tabela de Códigos Especiais
 
-|Código Especiais | Significado |
-|-----------------| ------------
-| \n              |  Nova linha |
-| \t              |  Tabulação  |
+| Código Especiais | Significado |
+| ---------------- | ----------- |
+| \n               | Nova linha  |
+| \t               | Tabulação   |
 
 `Strings` não precisam conter apenas texto. Eles também podem conter caracteres de controle. A diferença entre aspas simples ou duplas é que as aspas duplas permitem sequências de escape, enquanto as aspas simples não permitem. Exemplo:
 
 ```ruby
 puts 'Ruby\nPHP'; # Aspas simples
-
 puts "Ruby\nPHP"; # Aspas duplas + nova linha
-
 puts "Ruby\tPHP"; # Aspas duplas + tabulação
 ```
 
@@ -75,8 +74,8 @@ Executando:
    Ruby    PHP
 ```
 
-No exemplo acima, `\n` é a sequência de escape que representa o caractere de “nova linha”.
+No exemplo acima, a sequência de escape `\n` foi interpretada apenas quando a string foi definida com aspas duplas.
 
-Com esses exemplos espero que você tenha obtido um pouco conhecimento sobre interpolação e a quantidade de coisas que você pode fazer com isso juntado como tudo que já aprendemos. 😁
+Agora que você já conhece a interpolação de strings e as sequências de escape, você pode criar strings mais dinâmicas e flexíveis em seus programas Ruby.
 
 [Próximo](8-entrada-e-saida.md)

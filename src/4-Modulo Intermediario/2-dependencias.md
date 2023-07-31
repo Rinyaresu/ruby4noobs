@@ -2,54 +2,63 @@
 
 ## O que são Dependências?
 
-Dependências são nada mais nada menos que bibliotecas externas que uma aplicação pode utilizar. E nos vamos aprender como as dependências funcionam no universo *Ruby*.
+Dependências são bibliotecas externas que uma aplicação Ruby pode utilizar para estender suas funcionalidades ou resolver problemas específicos. No universo Ruby, essas bibliotecas são chamadas de **gems**.
 
 ## Gems
 
-As **gems** são bibliotecas ou aplicações **Ruby** que podem ser usadas em qualquer projeto. O gerenciamento das gems é um recurso que vem a partir do [Rubygems](https://rubygems.org/). Se você instalou Ruby com o nosso versionador [asdf](/src/2-Ambiente/2-configuracao-de-ambiente.md#linux-e-macos), o suporte para gems está disponível. Agora vamos instalar uma gem. Para isso, vamos usar o comando `gem install`.
-
-```bash
-gem install <nome-da-gem>
-```
-
-Tudo que você precisa fazer é digitar o nome da gem que você quer instalar. Se você não sabe o nome da gem, você pode procurar no [Rubygems](https://rubygems.org/) ou no [GitHub](https://github.com/). Além disso, existem vários outros comandos. Vamos dar uma olhada neles usando `gem` como parâmetro:
-
-- `gem list`: lista todas as gems instaladas
-- `gem update`: atualiza todas as gems instaladas
-- `gem uninstall`: desinstala uma gem
-- `gem search`: procura por uma gem
+As **gems** são pacotes de software que contêm código Ruby pronto para ser utilizado em projetos. Elas podem ser bibliotecas que adicionam novas funcionalidades, frameworks para desenvolvimento web, utilitários para tarefas específicas, entre muitas outras coisas. As gems são publicadas no [RubyGems](https://rubygems.org/), que é o repositório oficial de gems para a linguagem Ruby.
 
 ## Gerenciamento de Gems com Bundler
 
-[Bundler](https://bundler.io/) é um gerenciador de dependências para o *Ruby*. Ele é um pacote de software que permite que você organize suas **dependências** de forma mais eficiente. Você pode usar o Bundler para gerenciar suas dependências de forma automática. Para isso, vamos instalar o Bundler e entender como ele funciona.
+Para instalar e gerenciar gems em um projeto Ruby, utilizamos o **Bundler**. O Bundler é uma ferramenta que simplifica o gerenciamento de dependências ao criar um ambiente isolado para cada projeto, garantindo que cada um tenha as gems necessárias sem interferir no ambiente global do sistema.
 
-```ruby
+Para utilizar o Bundler, primeiro, é necessário instalá-lo em sua máquina com o seguinte comando:
+
+```bash
 gem install bundler
 ```
 
-Com o Bundler instalado, podemos usar o comando `bundle init` para criar um arquivo `Gemfile` que contém as dependências de um projeto.
+Após a instalação do Bundler, podemos criar um arquivo chamado `Gemfile` no diretório do projeto para listar as dependências do projeto.
 
 ```ruby
-bundle init
-```
+# Gemfile
 
-Agora só basta adicionar as dependências que precisamos para o projeto dentro do arquivo `Gemfile`
-
-```ruby
 source 'https://rubygems.org'
 
 gem 'nokogiri'
 gem 'rack', '~> 2.0.1'
-gem 'rspec
+gem 'rspec'
 ```
 
-Vamos fazer como anteriormente e listar os comandos disponíveis usando `bundle` como parâmetro:
+Neste exemplo, adicionamos três gems ao nosso projeto: `nokogiri`, `rack` e `rspec`. A linha `source 'https://rubygems.org'` especifica de onde o Bundler deve buscar as gems.
 
-- `bundle install`: instala as dependências do projeto
-- `bundle update`: atualiza as dependências do projeto
-- `bundle show`: mostra as dependências do projeto
-- `bundle init`: cria um arquivo `Gemfile` que contém as dependências do projeto
+## Instalando e Atualizando as Gems
 
-Com isso estamos prontos para gerenciar e instalar as gems que usaremos depois. 😌
+Para instalar as gems listadas no `Gemfile`, basta executar o seguinte comando:
+
+```bash
+bundle install
+```
+
+O Bundler irá baixar e instalar as gems no ambiente do projeto.
+
+Caso você precise atualizar as gems para suas versões mais recentes, basta executar:
+
+```bash
+bundle update
+```
+
+## Outros Comandos do Bundler
+
+Além de instalar e atualizar as gems, o Bundler possui outros comandos úteis:
+
+- `bundle show`: mostra as gems instaladas no projeto.
+- `bundle exec`: executa um comando específico no contexto do ambiente isolado do projeto, garantindo que as gems do projeto sejam utilizadas.
+- `bundle init`: cria um arquivo `Gemfile` vazio no diretório do projeto para que você possa adicionar as dependências manualmente.
+- `bundle clean`: remove gems que não estão sendo utilizadas no projeto.
+
+O uso do Bundler é fundamental para garantir a consistência das dependências em um projeto Ruby, facilitando a colaboração entre desenvolvedores e evitando conflitos entre gems.
+
+Agora que aprendemos a gerenciar as dependências com o Bundler, estamos prontos para utilizar as gems em nosso projeto Ruby!
 
 [Próximo](3-testes.md)

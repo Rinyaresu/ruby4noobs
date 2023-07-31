@@ -1,6 +1,12 @@
 # O famoso "Hello World" e um pouco mais
 
-Apos a instalação do Ruby, nada melhor que começarmos escrevendo o famoso "Hello World". Para isso, vamos criar um diretório chamado `src` e dentro dele um arquivo chamado `hello-world.rb`:
+## Introdução
+
+Após a instalação do Ruby, nada melhor do que começarmos escrevendo o famoso "Hello World". Neste artigo, vamos aprender como criar um diretório, um arquivo e escrever o nosso primeiro código em Ruby. Ao final, você verá como essa linguagem é amigável e pode ser facilmente compreendida mesmo por quem nunca estudou programação antes.
+
+## Criando o Diretório e o Arquivo
+
+Para começar, vamos criar um diretório chamado `src` e dentro dele um arquivo chamado `hello-world.rb`. Você pode fazer isso através do terminal ou linha de comandos utilizando os seguintes comandos:
 
 ```bash
 mkdir src
@@ -8,56 +14,62 @@ cd src
 touch hello-world.rb
 ```
 
-Esses comandos vão criar a seguinte estrutura:
-  
+Após executar esses comandos, você terá a seguinte estrutura:
+
 ```ruby
 └── src
-  └── hello-world.rb
+    └── hello-world.rb
 ```
 
-O arquivo `hello-world.rb` dentro do diretório `src` é onde a magica vai acontecer, e é nele que a nossa jornada em Ruby começa. Vamos começar escrevendo o código:
+## Escrevendo o "Hello World"
+
+Agora, vamos abrir o arquivo `hello-world.rb` e escrever nosso primeiro código em Ruby:
 
 ```ruby
 puts "Hello World"
 ```
 
-Nesse código, o comando `puts` é um método de Ruby, que imprime na tela a string "Hello World".
+Neste código, utilizamos o comando `puts`, que é um método de Ruby que imprime na tela a string "Hello World".
 
-Para executar o arquivo `hello-world.rb`, basta executar o comando `ruby hello-world.rb` que o nosso código será mostrado no console:
+## Executando o Código
 
-```ruby
+Para executar o arquivo `hello-world.rb`, basta digitar o seguinte comando no terminal:
+
+```bash
 ruby hello-world.rb
 ```
 
-Executando:
+Ao fazer isso, o nosso código será executado e você verá a seguinte saída no console:
 
 ```txt
 => Hello World
 ```
 
-Com esse código já da para perceber nem que seja um pouco, o porquê dizem que a linguagem Ruby é a melhor amiga dos programadores. Você provavelmente consegue ler e entender o que o código quer dizer, mesmo que nunca tenha estudado ou visto outra linguagem de programação.
+## A Amigabilidade do Ruby
 
-Vamos escrever um pouco mais de código para percebemos como amigável é essa linguagem, primeiro vamos criar outro arquivo só que dessa vez ele será chamado de `5-ruby.rb`:
+Com esse código simples, já é possível perceber o porquê dizem que a linguagem Ruby é a melhor amiga dos programadores. Mesmo que você nunca tenha estudado ou visto outra linguagem de programação, é provável que consiga ler e entender o que o código faz.
 
-```bash
-touch 5-ruby.rb
-```
+## Vamos Escrever um Pouco Mais de Código
 
-Dentro desse arquivo vamos escrever:
-  
+Vamos continuar nossa jornada em Ruby e escrever mais um código. Dessa vez, vamos criar outro arquivo chamado `5-ruby.rb` e dentro dele escrever o seguinte:
+
 ```ruby
 5.times { puts "Ruby!" }
 ```
 
-Agora sem explicar o código será que você consegue ler em voz alta e entender ele? Espero que sim, se não está entendo, não se preocupe. Vamos quebrar esse código em linhas e entender o que ele faz.
+## Entendendo o Código
+
+Agora, sem explicar o código previamente, será que você consegue ler em voz alta e entender o que ele faz? Se não estiver entendendo, não se preocupe, vamos quebrar esse código em linhas e entender passo a passo:
 
 ```ruby
-5.times # Esse trecho significa que vamos repetir 5 vezes algo
-puts # Esse trecho significa que vamos imprimir algo na tela
-"Ruby!" # Esse trecho é uma string "Ruby!"
+5.times # Este trecho significa que vamos repetir 5 vezes algo
+puts     # Este trecho significa que vamos imprimir algo na tela
+"Ruby!"  # Este trecho é uma string que contém "Ruby!"
 ```
 
-Executando:
+## Executando o Novo Código
+
+Agora, ao executar o arquivo `5-ruby.rb`, você verá a seguinte saída:
 
 ```txt
 => Ruby!
@@ -67,6 +79,10 @@ Executando:
 => Ruby!
 ```
 
-E agora? Está começando a entender a linguagem? 🤔
+## Conclusão
+
+Com esses exemplos, você pode perceber como a linguagem Ruby é amigável e fácil de entender, mesmo para quem está começando a programar. A simplicidade e expressividade do Ruby tornam-na uma ótima escolha para iniciantes e também para projetos mais complexos.
+
+Lembre-se, a prática é fundamental para aprofundar seus conhecimentos em Ruby e em qualquer linguagem de programação.
 
 [Próximo](2-tipos-de-dados.md)

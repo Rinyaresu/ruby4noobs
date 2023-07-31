@@ -1,6 +1,12 @@
 # Classes e Objetos
 
-Tudo em ruby é um **objeto**. Então vamos aprender a criar os nossos próprios. Para isso, vamos começar criando uma classe chamada `Pessoa`.
+Neste módulo, vamos aprender sobre classes e objetos em Ruby. Em Ruby, tudo é um objeto, e podemos criar nossos próprios objetos usando classes. Vamos começar criando uma classe chamada `Pessoa`.
+
+## Criando uma Classe
+
+Para criar uma classe, usamos a palavra-chave `class`, seguida pelo nome da classe. Conforme as convenções de Ruby, os nomes das classes são escritos em CamelCase, com a primeira letra de cada palavra em maiúsculo. Por exemplo, podemos criar classes como `CachorroCaramelo`, `CarroPersonalizado` e `MeuComputador`.
+
+Vamos criar a classe `Pessoa` com duas propriedades: `nome` e `idade`.
 
 ```ruby
 class Pessoa
@@ -15,28 +21,18 @@ p pessoa
 puts pessoa
 ```
 
-Executando o código acima, você vai ver que a classe `Pessoa` foi criada como um objeto.
+Ao executar o código acima, você verá que a classe `Pessoa` foi criada como um objeto. No entanto, ao imprimir o objeto com `puts`, apenas a referência na memória é mostrada, não os valores das propriedades.
 
 ```txt
 => #<Pessoa:0x00007fcab271e1c8 @nome="Mc Poze do Rodo", @idade=23>
 => #<Pessoa:0x00007fcab271e1c8>
 ```
 
-Como visto acima, Para criarmos uma classe, usamos a palavra-chave `class`, seguida pelo nome da classe.
+### Método to_s
 
-Segundo as convenções de **Ruby**, nos nomes das classes é utilizado [camel case](https://pt.wikipedia.org/wiki/CamelCase), da mesma maneira que em [Java](https://github.com/paulorievrs/java4noobs/blob/master/4%20-%20Intermedi%C3%A1rio/04-PrimeiraClasse.md), com maiúsculas separando duas ou mais palavras no nome da classe. Temos então classes com nomes como `CachorroCaramelo`, `CarroPersonalizado`, `MeuComputador`.
+Para exibir o objeto de forma mais amigável, podemos definir o método to_s dentro da classe. Esse método é chamado quando tentamos exibir o objeto como uma string.
 
-As propriedades do nosso objeto são armazenadas no que já explicamos antes e chamamos de [variáveis de instância](../3-Basico%20da%20Linguagem/3-variaveis.md), que são variáveis dentro do objeto cujo nome se inicia com `@`. Se fizermos referência para alguma que ainda não foi criada, **ela será**.
-
-Podemos inicializar várias dessas variáveis dentro do método `initialize`, que é o construtor do nosso objeto, chamado após o método `new`, que aloca espaço na memória para o objeto sendo criado.
-
-## Transformando em string
-
-Podemos ver acima que usando `puts` para verificar o nosso **objeto**, foi mostrada somente a referência dele na memória. Mas, para vermos o objeto completo, precisamos transformar o objeto em string.
-
-Vamos fazer um método novo na classe para mostrar as informações de uma maneira mais bonita. Se lembra que em [tipos de dados](../3-Basico%20da%20Linguagem/2-tipos-de-dados.md) utilizamos um método chamado `to_s`, que converte o objeto em uma `String`? Vamos usar ele.
-
-Vamos criar um método para a nossa classe:
+Vamos adicionar o método to_s à nossa classe Pessoa:
 
 ```ruby
 class Pessoa
@@ -46,7 +42,7 @@ class Pessoa
   end
 
   def to_s
-  "Nome: #{@nome} Idade: #{@idade}"
+    "Nome: #{@nome} Idade: #{@idade}"
   end
 end
 
@@ -55,59 +51,32 @@ p pessoa
 puts pessoa
 ```
 
-Executando o código acima, você vai ver que a classe `Pessoa` foi criada como um objeto, e como o método `to_s` foi criado, ele foi chamado automaticamente.
+Agora, ao executar o código, o método to_s será chamado automaticamente e exibirá o objeto de uma forma mais legível.
 
 ```txt
 => #<Pessoa:0x00007f533fb23178 @nome="Mc Poze do Rodo", @idade=23>
 => Nome: Mc Poze do Rodo Idade: 23
 ```
 
-## attr_reader
+## Atributos de Leitura e Escrita
 
-Anteriormente vimos como criar nossos **objetos** e suas propriedades usando variáveis de instância, mas nos podemos lê-las?
+No exemplo anterior, criamos objetos da classe `Pessoa` com duas propriedades: `nome` e `idade`. No entanto, atualmente não temos acesso a essas propriedades diretamente. Precisamos criar métodos de acesso para ler e escrever nessas propriedades.
 
-Vamos acessá-las usando as nossas variáveis de instância:
+## `attr_reader`
 
-```ruby
-class Pessoa
-  def initialize(nome, idade)
-    @nome = nome
-    @idade = idade
-  end
-
-  def to_s
-  "Nome: #{@nome} Idade: #{@idade}"
-  end
-end
-
-pessoa = Pessoa.new("Mc Poze do Rodo", 23)
-puts pessoa.nome
-puts pessoa.idade
-```
-
-Ops..
-
-Executando o código acima, você vai ver que a recebemos um **erro**.
-
-```txt
-=> undefined method 'nome' for #<Pessoa:0x00007f533fa44888 @nome="Mc Poze do Rodo", @idade=23> (NoMethodError)
-
-=> undefined method 'idade' for #<Pessoa:0x00007f533fa44888 @nome="Mc Poze do Rodo", @idade=23> (NoMethodError)
-```
-
-Essas variáveis são privadas do **objeto**, e não podem ser lidas sem um método de acesso. Então nos podemos resolver isso usando `attr_reader`:
+Para permitir apenas a leitura das propriedades, podemos usar `attr_reader`. Isso cria automaticamente métodos de leitura para as variáveis de instância que queremos expor.
 
 ```ruby
 class Pessoa
   attr_reader :nome, :idade
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
   end
 
   def to_s
-  "Nome: #{@nome} Idade: #{@idade}"
+    "Nome: #{@nome} Idade: #{@idade}"
   end
 end
 
@@ -116,61 +85,36 @@ puts pessoa.nome
 puts pessoa.idade
 ```
 
-Executando o código agora nos vamos ter a resposta esperada:
+Executando o código acima, você obterá a saída esperada:
 
 ```txt
 => Mc Poze do Rodo
 => 23
 ```
 
-## attr_writer
+# `attr_writer`
 
-E se agora nos quisermos trocar o nome ou a idade usando as variáveis?
+Da mesma forma, para permitir apenas a escrita nas propriedades, podemos usar `attr_writer`. Isso cria automaticamente métodos de escrita para as variáveis de instância que queremos expor.
 
 ```ruby
+
 class Pessoa
-  attr_reader :nome, :idade
-  
+  attr_writer :idade
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
   end
 
   def to_s
-  "Nome: #{@nome} Idade: #{@idade}"
-  end
-end
-
-pessoa = Pessoa.new("Mc Poze do Rodo", 23)
-pessoa.idade = 24
-```
-
-Executando o código acima, você vai ver que recebemos um erro de `undefined method`:
-
-```irb
-=> undefined method `idade=' for #<Pessoa:0x00007f548af5c7c0 @nome="Mc Poze do Rodo", @idade=23> (NoMethodError)
-```
-
-No exemplo do `attr_reader` criamos **atributos de leitura**, que nos permitem a leitura da propriedade. Se precisarmos de algum **atributo de escrita**, para trocarmos a `idade` ou `nome` da `Pessoa`, podemos usar:
-
-```ruby
-class Pessoa
-  attr_reader :nome, :idade
-  attr_writer :idade 
-  
-  def initialize(nome, idade)
-    @nome = nome
-    @idade = idade
-  end
-
-  def to_s
-  "Nome: #{@nome} Idade: #{@idade}"
+    "Nome: #{@nome} Idade: #{@idade}"
   end
 end
 
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
 pessoa.idade = 24
 puts pessoa
+
 ```
 
 Executando o código agora nos vamos ter a resposta esperada:
@@ -179,21 +123,21 @@ Executando o código agora nos vamos ter a resposta esperada:
 => Nome: Mc Poze do Rodo Idade: 24
 ```
 
-## attr_accessor
+## `attr_accessor`
 
-`attr_accessor` é um método que nos ajuda a fazer o que foi ensinado acima de uma forma mais fácil e menos repetitiva. Como por exemplo:
+Para criar métodos de leitura e escrita automaticamente para nossas variáveis de instância, podemos usar `attr_accessor`. Isso combina as funcionalidades de `attr_reader` e `attr_writer` em uma única chamada.
 
 ```ruby
 class Pessoa
   attr_accessor :nome, :idade
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
   end
 
   def to_s
-  "Nome: #{@nome} Idade: #{@idade}"
+    "Nome: #{@nome} Idade: #{@idade}"
   end
 end
 
@@ -203,21 +147,15 @@ pessoa.nome = "MC Poze Pitbull do Funk"
 puts pessoa
 ```
 
-Executando o código agora nos vamos ter a resposta esperada:
-
-```txt
-=> Nome: MC Poze Pitbull do Funk Idade: 21
-```
-
 ## Variáveis de Classe
 
-Também podemos criar [variáveis de classe](../3-Basico%20da%20Linguagem/3-variaveis.md), que são variáveis que são compartilhadas por todos os objetos da classe.
+Podemos criar variáveis de classe que são compartilhadas por todos os objetos da classe. Essas variáveis podem ser usadas para contar o número de objetos criados daquela classe, por exemplo.
 
 ```ruby
 class Pessoa
   attr_accessor :nome, :idade
   @@contador = 0
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -225,16 +163,15 @@ class Pessoa
   end
 
   def to_s
-  "Nome: #{@nome} Idade: #{@idade}"
+    "Nome: #{@nome} Idade: #{@idade}"
   end
-  
-  def self.contador # utilizando self para não precisar de um objeto para acessar a variável de classe. Sem o self iriamos precisar usar o objeto Poze.contador para acessar a variável de classe.
+
+  def self.contador
     @@contador
   end
 end
 
 pessoa = Pessoa.new("Mc Poze do Rodo", 23)
-
 puts Pessoa.contador
 ```
 
@@ -246,14 +183,17 @@ Executando o código nos vamos ter a resposta esperada:
 
 ## Herança
 
-Em Ruby, temos *herança única*, que significa que uma classe pode apenas ser criada herdando de apenas outra classe, reduzindo a complexidade do código.
-Dessa forma, podemos ao invés de repetir a definição de métodos por classes similares, pode realizar essa operação em uma única classe (também chamada de **superclasse**) e as outras que possuem métodos comuns (chamadas de **subclasses**) herdam essas funcionalidades da sua superclasse. **A herança ajuda a reduzir substancialmente a duplicação de código.** Como por exemplo:
+Em Ruby, a herança é única, o que significa que uma classe pode herdar apenas de uma única classe (superclasse). Isso simplifica o código, pois não precisamos lidar com várias heranças como em outras linguagens.
+
+A herança permite que uma classe (subclasse) herde os métodos e atributos de outra classe (superclasse) e, ao mesmo tempo, adicione ou substitua comportamentos específicos.
+
+Vamos criar uma subclasse chamada `OutraPessoa` que herda da classe `Pessoa`. Nessa subclasse, vamos definir um método `to_s` que adiciona uma mensagem adicional à representação em `string` da classe `Pessoa`.
 
 ```ruby
 class Pessoa
   attr_accessor :nome, :idade
   @@contador = 0
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -263,7 +203,7 @@ class Pessoa
   def to_s
   "Nome: #{@nome} Idade: #{@idade}"
   end
-  
+
   def self.contador
     @@contador
   end
@@ -289,6 +229,8 @@ Executando o código nos vamos ter a resposta esperada:
 => Outra pessoa: Nome: Beethoven Idade: 56
 ```
 
-Espero que tenha entendido como funcionam **classes e objetos em ruby**. Isso não é tudo desse tema, mas é o suficiente para que você possa começar a aprender a programar usando classes e objetos. 😉
+Isso mostra que a subclasse `OutraPessoa` herdou o método `to_s` da classe `Pessoa`, mas adicionou uma mensagem adicional à sua representação em string.
+
+Espero que você tenha entendido como funcionam as classes e objetos em Ruby. Embora tenhamos abordado apenas conceitos básicos aqui, é o suficiente para começar a programar usando classes e objetos.
 
 [Próximo](2-dependencias.md)
