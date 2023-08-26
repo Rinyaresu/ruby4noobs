@@ -136,3 +136,5 @@ A próxima etapa é escrever o código, **fazendo com que o teste passe**. Você
 **Para cada modificação que você fizer, execute novamente os testes.** Assim você terá a confiança de que as alterações não afetaram o comportamento do projeto.
 
 Nesse ponto espero que tenha entendido como funciona testes automatizados e TDD na teoria, e também na prática. 😁
+
+[Próximo](4-tratamento-de-exceções.md)
