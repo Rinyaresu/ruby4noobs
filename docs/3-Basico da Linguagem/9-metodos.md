@@ -1,6 +1,6 @@
 # Métodos
 
-Olá. Vamos ver como escrever nossos próprios métodos. Note que podemos definir métodos facilmente em Ruby, usando `def`, terminando (**sempre**) com `end`. Segundo as convenções de Ruby, nos nomes dos métodos deve-se usar letras minúsculas separando as palavras com um sublinhado (\_).
+Olá. Vamos ver como escrever nossos próprios métodos. Note que podemos definir métodos facilmente em Ruby, usando `def`, terminando (**sempre**) com `end`. Segundo as convenções de Ruby, nos nomes dos métodos deve-se usar letras minúsculas separando as palavras com um sublinhado (_).
 
 ## Mas, o que são métodos?
 
