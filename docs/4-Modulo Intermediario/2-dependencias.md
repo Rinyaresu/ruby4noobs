@@ -6,7 +6,7 @@ Dependências são nada mais nada menos que bibliotecas externas que uma aplica�
 
 ## Gems
 
-As **gems** são bibliotecas ou aplicações **Ruby** que podem ser usadas em qualquer projeto. O gerenciamento das gems é um recurso que vem a partir do [Rubygems](https://rubygems.org/). Se você instalou Ruby com o nosso versionador [asdf](/src/2-Ambiente/2-configuracao-de-ambiente.md#linux-e-macos), o suporte para gems está disponível. Agora vamos instalar uma gem. Para isso, vamos usar o comando `gem install`.
+As **gems** são bibliotecas ou aplicações **Ruby** que podem ser usadas em qualquer projeto. O gerenciamento das gems é um recurso que vem a partir do [Rubygems](https://rubygems.org/). Se você instalou Ruby com o nosso versionador [asdf](2-Ambiente/2-configuracao-de-ambiente.md#linux-e-macos), o suporte para gems está disponível. Agora vamos instalar uma gem. Para isso, vamos usar o comando `gem install`.
 
 ```bash
 gem install <nome-da-gem>

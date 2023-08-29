@@ -8,7 +8,7 @@ Algumas das linguagens mais conhecidas a utilizarem tipagem dinâmica são: [Pyt
 
 Na prática, tipagem dinâmica significa:
 
-> ps: esses códigos foram feitos usando o [irb](/src/2-Ambiente/2-configuracao-de-ambiente.md#dica)
+> ps: esses códigos foram feitos usando o [irb](2-Ambiente/2-configuracao-de-ambiente.md#dica)
 
 ```ruby
 k = "teste"
