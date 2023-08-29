@@ -22,7 +22,7 @@
 
 ## Conteúdo
 
-Não tem necessidade de rodar o projeto, ele está disponível aqui
+Não tem necessidade de rodar o projeto, ele está disponível [aqui](https://rinyaresu.github.io/ruby4noobs/)
 
 ## Sobre o Projeto
 
