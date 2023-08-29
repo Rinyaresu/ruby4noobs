@@ -8,7 +8,7 @@ Algumas das linguagens mais conhecidas a utilizarem tipagem dinâmica são: [Pyt
 
 Na prática, tipagem dinâmica significa:
 
-> ps: esses códigos foram feitos usando o [irb](/src/2-Ambiente/2-configuracao-de-ambiente.md#dica)
+> ps: esses códigos foram feitos usando o [irb](2-Ambiente/2-configuracao-de-ambiente.md#dica)
 
 ```ruby
 k = "teste"
@@ -32,7 +32,7 @@ Ruby também tem tipagem forte. Linguagens implementadas com tipos de dados fort
 x = 10
 y = "Ruby"
 
-puts x + y 
+puts x + y
 
 => TypeError: String can't be coerced into Integer
 ```
@@ -167,7 +167,7 @@ k.class
 
 ### Regexp
 
-Uma expressão regular (ou regexp), é uma série de caracteres **cercados por barras**.  É utilizada para verificar se um texto segue um padrão.
+Uma expressão regular (ou regexp), é uma série de caracteres **cercados por barras**. É utilizada para verificar se um texto segue um padrão.
 
 ```ruby
 k = /Ruby/
@@ -265,7 +265,7 @@ Aqui vamos aprender que conversão de um objeto para outro tipo de objeto é pos
 
 ```ruby
 r = "10"
-r.to_i 
+r.to_i
 => 10
 ```
 
@@ -317,6 +317,4 @@ r.join(",")
 => "7,7,7"
 ```
 
-Espero que com **toda** essa informação você tenha um pouco mais de conhecimento sobre os **tipos de dados** em *Ruby*. A maior dica é você tentar usar esses métodos na pratica em um projeto próprio. Se você não conseguir, não hesite em perguntar. 😊
-
-[Próximo](3-variaveis.md)
+Espero que com **toda** essa informação você tenha um pouco mais de conhecimento sobre os **tipos de dados** em _Ruby_. A maior dica é você tentar usar esses métodos na pratica em um projeto próprio. Se você não conseguir, não hesite em perguntar. 😊

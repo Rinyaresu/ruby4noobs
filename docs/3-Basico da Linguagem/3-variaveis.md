@@ -19,7 +19,7 @@ Constantes são variáveis que não podem ser alteradas. Por exemplo:
 
 ```ruby
 Nome = "Ruby"
-Nome = "PHP" 
+Nome = "PHP"
 ```
 
 Executando:
@@ -60,5 +60,3 @@ Variáveis que começam com duas arrobas são **variáveis de classe**. Ou seja,
 ```ruby
 @@x, @@y, @@cachorro133, @@cachorro_caramelo
 ```
-
-[Próximo](4-operadores-aritimeticos.md)

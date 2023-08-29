@@ -101,5 +101,3 @@ Antes de tudo recomendo que você use o `irb` como uma escolha para escrever seu
 ```bash
 irb
 ```
-
-[Próximo](3-ambiente-online.md)

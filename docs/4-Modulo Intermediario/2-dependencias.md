@@ -2,11 +2,11 @@
 
 ## O que são Dependências?
 
-Dependências são nada mais nada menos que bibliotecas externas que uma aplicação pode utilizar. E nos vamos aprender como as dependências funcionam no universo *Ruby*.
+Dependências são nada mais nada menos que bibliotecas externas que uma aplicação pode utilizar. E nos vamos aprender como as dependências funcionam no universo _Ruby_.
 
 ## Gems
 
-As **gems** são bibliotecas ou aplicações **Ruby** que podem ser usadas em qualquer projeto. O gerenciamento das gems é um recurso que vem a partir do [Rubygems](https://rubygems.org/). Se você instalou Ruby com o nosso versionador [asdf](/src/2-Ambiente/2-configuracao-de-ambiente.md#linux-e-macos), o suporte para gems está disponível. Agora vamos instalar uma gem. Para isso, vamos usar o comando `gem install`.
+As **gems** são bibliotecas ou aplicações **Ruby** que podem ser usadas em qualquer projeto. O gerenciamento das gems é um recurso que vem a partir do [Rubygems](https://rubygems.org/). Se você instalou Ruby com o nosso versionador [asdf](2-Ambiente/2-configuracao-de-ambiente.md#linux-e-macos), o suporte para gems está disponível. Agora vamos instalar uma gem. Para isso, vamos usar o comando `gem install`.
 
 ```bash
 gem install <nome-da-gem>
@@ -21,7 +21,7 @@ Tudo que você precisa fazer é digitar o nome da gem que você quer instalar. S
 
 ## Gerenciamento de Gems com Bundler
 
-[Bundler](https://bundler.io/) é um gerenciador de dependências para o *Ruby*. Ele é um pacote de software que permite que você organize suas **dependências** de forma mais eficiente. Você pode usar o Bundler para gerenciar suas dependências de forma automática. Para isso, vamos instalar o Bundler e entender como ele funciona.
+[Bundler](https://bundler.io/) é um gerenciador de dependências para o _Ruby_. Ele é um pacote de software que permite que você organize suas **dependências** de forma mais eficiente. Você pode usar o Bundler para gerenciar suas dependências de forma automática. Para isso, vamos instalar o Bundler e entender como ele funciona.
 
 ```ruby
 gem install bundler
@@ -51,5 +51,3 @@ Vamos fazer como anteriormente e listar os comandos disponíveis usando `bundle`
 - `bundle init`: cria um arquivo `Gemfile` que contém as dependências do projeto
 
 Com isso estamos prontos para gerenciar e instalar as gems que usaremos depois. 😌
-
-[Próximo](3-testes.md)

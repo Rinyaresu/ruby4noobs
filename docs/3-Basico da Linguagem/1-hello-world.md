@@ -9,7 +9,7 @@ touch hello-world.rb
 ```
 
 Esses comandos vão criar a seguinte estrutura:
-  
+
 ```ruby
 └── src
   └── hello-world.rb
@@ -44,7 +44,7 @@ touch 5-ruby.rb
 ```
 
 Dentro desse arquivo vamos escrever:
-  
+
 ```ruby
 5.times { puts "Ruby!" }
 ```
@@ -68,5 +68,3 @@ Executando:
 ```
 
 E agora? Está começando a entender a linguagem? 🤔
-
-[Próximo](2-tipos-de-dados.md)
