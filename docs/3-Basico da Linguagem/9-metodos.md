@@ -70,5 +70,3 @@ puts historia_do_brasil(1889) # Aqui vocês podem mudar o ano para ver os result
 ```
 
 Espero que tenham entendido o que aconteceu nesse exemplo. Se não tiverem entendido, não se preocupem, vamos ver mais métodos nas próximas aulas. 😁
-
-[Próximo](../4-Modulo%20Intermediario/1-classes-e-objetos.md)

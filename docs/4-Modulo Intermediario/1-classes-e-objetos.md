@@ -100,7 +100,7 @@ Essas variáveis são privadas do **objeto**, e não podem ser lidas sem um mét
 ```ruby
 class Pessoa
   attr_reader :nome, :idade
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -130,7 +130,7 @@ E se agora nos quisermos trocar o nome ou a idade usando as variáveis?
 ```ruby
 class Pessoa
   attr_reader :nome, :idade
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -156,8 +156,8 @@ No exemplo do `attr_reader` criamos **atributos de leitura**, que nos permitem a
 ```ruby
 class Pessoa
   attr_reader :nome, :idade
-  attr_writer :idade 
-  
+  attr_writer :idade
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -186,7 +186,7 @@ Executando o código agora nos vamos ter a resposta esperada:
 ```ruby
 class Pessoa
   attr_accessor :nome, :idade
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -217,7 +217,7 @@ Também podemos criar [variáveis de classe](../3-Basico%20da%20Linguagem/3-vari
 class Pessoa
   attr_accessor :nome, :idade
   @@contador = 0
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -227,7 +227,7 @@ class Pessoa
   def to_s
   "Nome: #{@nome} Idade: #{@idade}"
   end
-  
+
   def self.contador # utilizando self para não precisar de um objeto para acessar a variável de classe. Sem o self iriamos precisar usar o objeto Poze.contador para acessar a variável de classe.
     @@contador
   end
@@ -246,14 +246,14 @@ Executando o código nos vamos ter a resposta esperada:
 
 ## Herança
 
-Em Ruby, temos *herança única*, que significa que uma classe pode apenas ser criada herdando de apenas outra classe, reduzindo a complexidade do código.
+Em Ruby, temos _herança única_, que significa que uma classe pode apenas ser criada herdando de apenas outra classe, reduzindo a complexidade do código.
 Dessa forma, podemos ao invés de repetir a definição de métodos por classes similares, pode realizar essa operação em uma única classe (também chamada de **superclasse**) e as outras que possuem métodos comuns (chamadas de **subclasses**) herdam essas funcionalidades da sua superclasse. **A herança ajuda a reduzir substancialmente a duplicação de código.** Como por exemplo:
 
 ```ruby
 class Pessoa
   attr_accessor :nome, :idade
   @@contador = 0
-  
+
   def initialize(nome, idade)
     @nome = nome
     @idade = idade
@@ -263,7 +263,7 @@ class Pessoa
   def to_s
   "Nome: #{@nome} Idade: #{@idade}"
   end
-  
+
   def self.contador
     @@contador
   end
@@ -290,5 +290,3 @@ Executando o código nos vamos ter a resposta esperada:
 ```
 
 Espero que tenha entendido como funcionam **classes e objetos em ruby**. Isso não é tudo desse tema, mas é o suficiente para que você possa começar a aprender a programar usando classes e objetos. 😉
-
-[Próximo](2-dependencias.md)

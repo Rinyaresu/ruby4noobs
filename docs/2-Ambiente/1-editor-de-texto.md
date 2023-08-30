@@ -7,5 +7,3 @@ Como é uma escolha fiquem a vontade para utilizarem o editor que se sentirem ma
 1. [VSCode](https://code.visualstudio.com/download)
 2. [Rubymine](https://www.jetbrains.com/ruby/)
 3. [Vim](https://github.com/luanmateuz/vim4noobs)
-
-[Próximo](2-configuracao-de-ambiente.md)

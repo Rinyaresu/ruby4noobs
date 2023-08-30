@@ -63,7 +63,7 @@ end
 Executando:
 
 ```txt
-=> Não é Ruby 
+=> Não é Ruby
 ```
 
 Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste positivo (if).
@@ -73,7 +73,7 @@ Esse tipo de código é bem confuso, as vezes é melhor fazer um bom teste posit
 `case` é utilizado para executar um bloco de código de acordo com uma condição. É possível utilizar mais de uma condição. Podemos utilizar o case para fazer algumas comparações interessantes.
 
 ```ruby
-r = "JavaScript" 
+r = "JavaScript"
 
 case r
 when "Ruby"
@@ -202,5 +202,3 @@ Executando:
 ```
 
 Se não interromper com Ctrl+C, esse código vai ficar funcionando para sempre.
-
-[Próximo](7-interpolacao.md)

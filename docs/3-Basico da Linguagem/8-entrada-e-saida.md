@@ -10,7 +10,7 @@ A função `puts` é utilizada para imprimir uma mensagem na tela. Como por exem
 puts "Hello World"
 ```
 
-Nós podemos "*dar puts*" em qualquer lugar do código. E com quase todos os [tipos de dados](./2-tipos-de-dados.md). Por exemplo:
+Nós podemos "_dar puts_" em qualquer lugar do código. E com quase todos os [tipos de dados](./2-tipos-de-dados.md). Por exemplo:
 
 ```ruby
 puts "Hello World"
@@ -44,5 +44,3 @@ puts "Qual é a sua idade? " # Imprime a mensagem
 idade = gets.chomp # Lê a entrada do usuário e remove o \n do final
 puts "Seu nome é #{nome} e você tem #{idade} anos." # Imprime a mensagem com a interpolação
 ```
-
-[Próximo](9-metodos.md)
