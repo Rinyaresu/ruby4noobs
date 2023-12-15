@@ -297,7 +297,7 @@ r.to_s
 
 ```ruby
 r = "Ruby"
-r.to_a
+r.split("")
 => ["R", "u", "b", "y"]
 ```
 
